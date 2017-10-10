@@ -13,21 +13,11 @@ OCT 2017
 
 # Задачи
 
-## Заменить email
-
-`dev`
-
-sheep.today@gmail.com
-
-- http://sheep.today/#Contacts
-- http://sheep.today/products/book-latvia-atlas-gazania.html
-
 ## Переписать галерею
 
-`dev`
 `контент`
 
-- Tufte CSS
+- Paginator menu
 - Контент: Страница овец
 - Контент: Страница заказов
 - Контент: Просто картинки
@@ -49,6 +39,8 @@ sheep.today@gmail.com
 - always on top
 - subscribe & just say COOL
 - картинка COOL
+- иконка Home
+- иконка Hamburger (локальное меню)
 
 ## Side Menu
 
