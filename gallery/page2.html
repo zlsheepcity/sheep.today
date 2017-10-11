@@ -55,6 +55,7 @@ ga('send', 'pageview');
 <!-- bulma --><link href="../app/lib/bulma.css" rel="stylesheet"  media="all" /><!-- / -->
 <!-- tufte --><link href="../app/lib/tufteDesign.css" rel="stylesheet"  media="all" /><!-- / -->
 <!-- app design --><link href="../app/css/app.css" rel="stylesheet"  media="all" /><!-- / -->
+<!-- app design --><link href="../app/css/app-3k-componetnts.css" rel="stylesheet"  media="all" /><!-- / -->
 
 <!-- ## custom settings below-->
 
@@ -77,29 +78,23 @@ ga('send', 'pageview');
 
     <!-- logo -->
     <div class="elItem elLogo cLogo">
-        <a href="#asdasdasdasd" class="cHomeLink">
-            <h2 class="aDisplayAlias">Alt Title</h2>
-        </a>
+        <a href="http://sheep.today/" class="cHomeLink"><img src="../app/img/sheep.today.svg" height="48" /></a>
+        <h2 class="aDisplayAlias">www.sheep.today</h2>
     </div>
     <!-- endblock -->
 
     <!-- header menu -->
     <nav class="elHeaderMenu cMenu">
         <ul>
-            <li class="is-active"><a href="#Home">Home</a></li>
-            <li class=""><a href="#">Page</a></li>
+            <li class=""><a href="../#Home">Home</a></li>
+            <li class="is-active"><a href="../gallery/page1.html">Gallery</a></li>
+            <li class=""><a href="../products/book-latvia-atlas-gazania.html">Products</a></li>
+            <li class=""><a href="../#Contacts">Contacts</a></li>
         </ul>
     </nav>
     <!-- endblock -->
 
 </header>
-
-
-
-
-
-
-
 
 <!-- =================================================== view main -->
 
@@ -135,18 +130,31 @@ ga('send', 'pageview');
         </p>
 
       <section>
+        <figure class="fullwidth">
+          <img src="../data/gallery/sheep/newton.png" alt="Newton Sheep" class="zzz" />
+        </figure>
         <h2 id="figures">Figures</h2>
         <p>Tufte emphasizes tight integration of graphics with text. Data, graphs, and figures are kept with the text that discusses them. In print, this means they are not relegated to a separate page. On the web, that means readability of graphics and their accompanying text without extra clicks, tab-switching, or scrolling.</p>
-        <p>Figures should try to use the <code>figure</code> element, which by default are constrained to the main column. Don’t wrap figures in a paragraph tag. Any label or margin note goes in a regular margin note inside the figure. For example, most of the time one should introduce a figure directly into the main flow of discussion, like so:</p>
+
         <figure>
-          <label for="mn-exports-imports" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-exports-imports" class="margin-toggle"/><span class="marginnote">From Edward Tufte, <em>Visual Display of Quantitative Information</em>, page 92.</span>
-          <img src="../data/demo/exports-imports.png" alt="Exports and Imports to and from Denmark & Norway from 1700 to 1780" class="zzz" />
+          <label for="sheepcity-hotel" class="margin-toggle">&#8853;</label><input type="checkbox" id="sheepcity-hotel" class="margin-toggle"/><span class="marginnote">From Edward Tufte, <em>Visual Display of Quantitative Information</em>, page 92.</span>
+          <img src="../data/gallery/sheep/sheepcity-hotel.png" alt="Sheep in the Hotel" class="zzz" />
         </figure>
 
-        <p><label for="mn-figure-1" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-figure-1" class="margin-toggle"/><span class="marginnote"><img src="../data/demo/rhino.png" alt="Image of a Rhinoceros" class="zzz"/>F.J. Cole, “The History of Albrecht Dürer’s Rhinoceros in Zooological Literature,” <em>Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice</em> (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte’s <em>Visual Explanations</em>.</span> But tight integration of graphics with text is central to Tufte’s work even when those graphics are ancillary to the main body of a text. In many of those cases, a margin figure may be most appropriate. To place figures in the margin, just wrap an image (or whatever) in a margin note inside a <code>p</code> tag, as seen to the right of this paragraph.</p>
+        <p>Figures should try to use the <code>figure</code> element, which by default are constrained to the main column. Don’t wrap figures in a paragraph tag. Any label or margin note goes in a regular margin note inside the figure. For example, most of the time one should introduce a figure directly into the main flow of discussion, like so:</p>
+        <figure>
+          <label for="sheepcity-boulangerie" class="margin-toggle">&#8853;</label><input type="checkbox" id="sheepcity-boulangerie" class="margin-toggle"/><span class="marginnote">From Edward Tufte, <em>Visual Display of Quantitative Information</em>, page 92.</span>
+          <img src="../data/gallery/sheep/sheepcity-boulangerie.png" alt="Sheep in Boulangerie" class="zzz" />
+        </figure>
+
+        <p>
+            <label for="Bulka-Animation" class="margin-toggle">&#8853;</label><input type="checkbox" id="Bulka-Animation" class="margin-toggle"/><span class="marginnote"><img src="../data/gallery/sheep/Bulka-Animation.gif" alt="Two steps of sheep drawing" class="zzz"/>
+            
+            F.J. Cole, “The History of Albrecht Dürer’s Rhinoceros in Zooological Literature,” <em>Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice</em> (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte’s <em>Visual Explanations</em>.</span> But tight integration of graphics with text is central to Tufte’s work even when those graphics are ancillary to the main body of a text. In many of those cases, a margin figure may be most appropriate. To place figures in the margin, just wrap an image (or whatever) in a margin note inside a <code>p</code> tag, as seen to the right of this paragraph.
+        </p>
         <p>If you need a full-width figure, give it the <code>fullwidth</code> class. Make sure that’s inside an <code>article</code>, and it will take up (almost) the full width of the screen. This approach is demonstrated below using Edward Tufte’s English translation of the Napoleon’s March data visualization. From <em>Beautiful Evidence</em>, page 122-124.</p>
         <figure class="fullwidth">
-          <img src="../data/demo/napoleons-march.png" alt="Figurative map of the successive losses of the French Army in the Russian campaign, 1812-1813" class="zzz" />
+          <img src="../data/gallery/sheep/Bulka-Animation-Tree.gif" alt="Two steps of fox drawing" class="zzz" />
         </figure>
         <p>One obstacle to creating elegant figures on the web is the difficulty of handling different screen sizes, especially on the fly. Embedded <code>iframe</code> elements are particularly troublesome. For these instances we provide a helper class, <code>iframe-wrapper</code>, the most common use for which is probably YouTube videos, e.g.</p>
         <pre class="code">
@@ -231,17 +239,14 @@ ga('send', 'pageview');
 
 <!-- =================================================== mobile header -->
 
-<nav class="elHeader elHeaderMobile cHeader">
+<section class="elHeader elHeaderMobile cHeader">
 
-    <!-- logo -->
     <div class="elItem elLogo cLogo">
-        <a href="#" class="cHomeLink">
-            <h2 class="aDisplayAlias">Alt Title</h2>
-        </a>
+        <a href="http://sheep.today/"><img src="../app/img/sheep.today.svg" height="44" /></a>
+        <h2 class="aDisplayAlias">www.sheep.today</h2>
     </div>
-    <!-- endblock -->
 
-    <!-- aside menu trigger -->
+    <!-- hamburger trigger -->
     <div class="elItem elMenuTrigger cMenuTrigger jsMenuTrigger">
         <div class="elMenuTrigger__readyToOpen">
             <span class="aIcon aIcon--hamburger"></span>
@@ -252,29 +257,31 @@ ga('send', 'pageview');
     </div>
     <!-- endblock -->
 
-    <!-- drop overlay on header -->
+    <!-- mobile toolbar -->
+    <div class="elItem elMenuMobileToolbar">
+    </div>
+    <!-- endblock -->
+
+    <!-- drop overlay om main -->
     <div class="elView__shadow jsMenuClose" data-action="close"></div>
     <!-- endblock -->
 
-</nav>
-
-
-
+</section>
 
 
 
 <!-- =================================================== aside panel -->
 
+<!-- aside menu -->
 <aside class="elAside cMenu cMenuAside">
-
-    <!-- aside menu -->
     <ul>
-        <li class="is-active"><a href="#Home">Home</a></li>
-        <li class=""><a href="#">Page</a></li>
+        <li class=""><a href="../#Home">Home</a></li>
+        <li class="is-active"><a href="../gallery/page1.html">Gallery</a></li>
+        <li class=""><a href="../products/book-latvia-atlas-gazania.html">Products</a></li>
+        <li class=""><a href="../#Contacts">Contacts</a></li>
     </ul>
-    <!-- endblock -->
-
 </aside>
+<!-- endblock -->
 
 
 

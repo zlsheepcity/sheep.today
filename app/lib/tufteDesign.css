@@ -27,7 +27,8 @@
 
 
 .tufteDesign h1 { font-weight: 400;
-     margin-top: 4rem;
+     margin-top: 0rem;
+     padding-top: 4rem;
      margin-bottom: 1.5rem;
      font-size: 3.2rem;
      line-height: 1; }
