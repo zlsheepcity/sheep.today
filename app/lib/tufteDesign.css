@@ -122,16 +122,16 @@
          -webkit-margin-end: 0;
          margin: 0 0 3em 0; }
 
-.tufteDesign figcaption { float: none;
+.tufteDesign figcaption { float: none; margin-left: 20%;
              margin-top: 0;
              margin-bottom: 0;
              font-size: 1.1rem;
              line-height: 1.6;
              vertical-align: baseline;
              position: relative;
-             max-width: 40%; }
+             max-width: 100%; }
 
-.tufteDesign figure.fullwidth figcaption { margin-right: 24%; }
+/*.tufteDesign figure.fullwidth figcaption { margin-right: 24%; }*/
 
 /* Links: replicate underline that clears descenders */
 .tufteDesign a:link,
@@ -278,7 +278,10 @@
                                            width: 95%;
                                            margin: 1rem 2.5%;
                                            vertical-align: baseline;
-                                           position: relative; }
+                                           position: relative;
+                                        padding: 1rem 2.5%;
+                                        margin:0;
+                                        background-color: azure; }
     .tufteDesign label { cursor: pointer; }
     .tufteDesign div.table-wrapper,
     .tufteDesign table { width: 85%; }

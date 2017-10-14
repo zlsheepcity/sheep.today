@@ -27,12 +27,13 @@ OCT 2017
 `контент`
 `dev`
 
-- Paginator menu
 - Контент: Страница заказов
 - Контент: Просто картинки
 - gallery index
+- Paginator menu
 - image loader
 - slide menu
+- srcset
 
 ## MailChimp рассылка
 
