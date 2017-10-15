@@ -22,9 +22,14 @@
     width: auto;
     height: 48px;
 }
+@media screen and (max-width:1000px) {
+    .cLogo img {
+        max-width: 180px;
+    }
+}
 @media screen and (max-width:768px) {
     .cLogo {
-        padding-right: 48px;
+        margin-right: 0;
     }
 }
 .cHomeLink {
@@ -71,11 +76,35 @@
     background: #CD0001;
     color: white;
 }
-
 .cMenuAside {
     background-color: #FFCB01;
 }
+@media screen and (min-width:769px) {
+    .elPageMenuTrigger .aIcon {
+        height: 44px;
+        width: 44px;
+    }
+}
 
+.cMenuAside a.isActiveParent {
+    display: block;
+    background: #CD0001;
+    color: white;
+}
+.cMenuAside li a.isActiveParent:hover {
+    color: white;
+}
+.cMenuAside .aSubMenu a:before {
+    content: ' — ';
+    display:inline-block;
+    vertical-align: middle;
+    padding: 0 .25rem;
+    opacity: .25;
+}
+.cMenuAside .aSubMenu a {
+    font-size: 1rem;
+    padding: .25rem;
+}
 
 /*
 # welcome slide

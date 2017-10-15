@@ -7,9 +7,20 @@ $(function(){
     function jsMenuTrigger(e) {
         $('.elBody').toggleClass('elBody--asideIsOpen');
     }
-    $('.jsMenuClose').on('click', jsMenuClose);
-    function jsMenuClose(e) {
-        $('.elBody').removeClass('elBody--asideIsOpen');
+    $('.jsMenuClose').on('click', jsCloseAllMenus);
+
+    /* second aside menu - page menu */
+    $('.jsPageMenuTrigger').on('click', jsPageMenuTrigger);
+    function jsPageMenuTrigger(e) {
+        $('.elBody').toggleClass('elBody--pageMenuIsOpen');
+    }
+    $('.jsPageMenuClose').on('click', jsCloseAllMenus);
+
+    /* close all */
+    function jsCloseAllMenus(e) {
+        $('.elBody')
+            .removeClass('elBody--pageMenuIsOpen')
+            .removeClass('elBody--asideIsOpen');
     }
 
     /* focused shadow */
