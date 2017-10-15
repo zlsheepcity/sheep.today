@@ -105,19 +105,35 @@ ga('send', 'pageview');
 
 <main class="elMain cMain">
 
+
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
 <!-- =================================================== [CONTENT START] -->
 
-<section style="background-color: #fffff8;">
+
+<section class="tufteDesign__mama" style="position: relative;">
     <figure class="fullwidth" style="opacity:.32;">
         <picture>
             <source media="(min-width:600px)" srcset="../data/gallery/sheep/sheepcity__cover.svg">
             <img src="../data/gallery/sheep/min/sheepcity__cover.png" alt="Sheep City" class="" />
         </picture>
     </figure>
+    <div class="cPageMenuHelper jsPageMenuTrigger" style="
+           position:absolute;
+           top: 0;
+           right: 0;
+           padding: 1rem;
+           padding-right: 1.5rem;
+           font-size: 2rem;
+           color: brown;
+           text-shadow: 2px 2px #ffffff;
+           cursor: pointer;
+       ">
+        <em>Содержание</em> ↑
+    </div>
 </section>
 
 <!-- =================================================== tufte -->
+<div class="tufteDesign__mama">
 <div class="tufteDesign">
 <article id="SheepCity">
     <!-- =================================================== -->
@@ -127,7 +143,7 @@ ga('send', 'pageview');
         Городовец / Sheep City
     </h1>
     <p class="subtitle">
-        Gallery page 2
+        web gallery
     </p>
     <section>
         <figure class="fullwidth">
@@ -792,11 +808,16 @@ ga('send', 'pageview');
         <p>
             Жить с овечками в одном городе — очень весело!
         </p>
+        <p>
+            <em>Рига, октябрь 2017</em><br>
+            zl<br>
+        </p>
 
     </section>
     <!-- =================================================== -->
 
 </article>
+</div>
 </div>
 <!-- =================================================== end tufte -->
 
@@ -817,18 +838,25 @@ ga('send', 'pageview');
 </section>
 <!-- =================================================== end social likes sample -->
 
-
+<!-- =================================================== email subcription sample -->
 <div class="columns">
 <div class="column">
-<!-- =================================================== email subcription sample -->
 <section class="box content">
-    <h4>Скоро выйдет книга про овец</h4>
+    <h4 style="font-size:1.4rem; color:brown;">
+        Скоро выйдет книга про овец
+    </h4>
+    <figure class="image">
+        <img style="width:16rem;" src="../data/web/reading_literature_books.svg" alt="Sheep reading books" />
+    </figure>
+</section>
+</div>
+<div class="column">
+<section class="box content">
     <p>
         Хотите вовремя узнать о выходе книги?<br>
         Подпишитесь на новости
     </p>
     <!-- Begin MailChimp Signup Form -->
-    <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <style type="text/css">
         #mc_embed_signup form { padding: 0; }
     </style>
@@ -836,29 +864,32 @@ ga('send', 'pageview');
     <form action="https://today.us16.list-manage.com/subscribe/post?u=f2f56449d7526a6a993997587&amp;id=122683d921" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
             <div class="mc-field-group">
-                <label for="mce-EMAIL">Email адрес </label>
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="example@email.address">
+                <div class="field">
+                 <label for="mce-EMAIL">Email адрес </label>
+                  <div class="control">
+                    <input type="email" value="" name="EMAIL" class="input required email" id="mce-EMAIL" placeholder="example@email.address">
+                  </div>
+                </div>
             </div>
         <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
         </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f2f56449d7526a6a993997587_122683d921" tabindex="-1" value=""></div>
-        <div class="clear"><input type="submit" value="Подписаться" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        <div class="field">
+            <div class="control">
+                <input type="submit" value="Подписаться" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+            </div>
         </div>
     </form>
     </div>
     <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     <!--End mc_embed_signup-->
 </section>
+</div>
+</div>
 <!-- =============================================== end email subcription sample -->
-</div>
-<div class="column">
-    <figure class="image" style="padding:1rem;">
-        <img style="width:16rem;" src="../data/web/reading_literature_books.svg" alt="Sheep reading books" />
-    </figure>
-</div>
-</div>
 
 
 
@@ -888,9 +919,17 @@ ga('send', 'pageview');
 <section class="elHeader elHeaderMobile cHeader">
 
     <div class="elItem elLogo cLogo">
-        <a href="http://sheep.today/"><img src="../app/img/sheep.today.svg" height="44" /></a>
+        <a href="#Start"><img src="../app/img/sheep.today.svg" height="44" /></a>
         <h2 class="aDisplayAlias">www.sheep.today</h2>
     </div>
+
+    <!-- footer desktop menu -->
+    <nav class="elHeaderMenu cMenu">
+        <ul>
+            <li class=""><a href="#Start">↑ Scroll to Top</a></li>
+        </ul>
+    </nav>
+    <!-- endblock -->
 
     <!-- hamburger trigger -->
     <div class="elItem elMenuTrigger cMenuTrigger jsMenuTrigger">
@@ -954,6 +993,7 @@ ga('send', 'pageview');
                 <li><a href="#Characters">Персонажи</a></li>
                 <li><a href="#City">Город</a></li>
                 <li><a href="#Culture">Культура города</a></li>
+                <li><a href="#Social">Социальная сторона культуры</a></li>
                 <li><a href="#DrawingLines">Линии рисунка</a></li>
                 <li><a href="#ImageDetails">Детализация</a></li>
                 <li><a href="#DigitalImage">Цифровое изображение</a></li>

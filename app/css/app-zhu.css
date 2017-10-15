@@ -517,7 +517,7 @@ ul.aMarkUL {
         transition: transform .2s ease-in;
     }
     .cTopCards .has-default-hover:hover .card-image img {
-        transform: scale(1.1);
+        /*transform: scale(1.1);*/
     }
     .cTopCards .title > span {
         display: inline-block;

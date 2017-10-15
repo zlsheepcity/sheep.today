@@ -10,6 +10,9 @@
 /* Tufte CSS styles */
 /* ZL: parent class added */
 .tufteDesign { font-size: 15px; }
+.tufteDesign__mama {
+    background-color: #fffff8;
+}
 
 .tufteDesign { width: 87.5%;
        margin-left: auto;

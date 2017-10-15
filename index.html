@@ -51,7 +51,10 @@ ga('send', 'pageview');
 
 <!-- bulma --><link href="app/lib/bulma.css" rel="stylesheet"  media="all" /><!-- / -->
 <!-- like-buttons --><link href="app/lib/social-likes_flat.css" rel="stylesheet"  media="all"><!-- / -->
+<!-- tufte --><link href="app/lib/tufteDesign.css" rel="stylesheet"  media="all" /><!-- / -->
 <!-- app design --><link href="app/css/app-zhu.css" rel="stylesheet"  media="all"><!-- / -->
+<!-- app design --><link href="app/css/app.css" rel="stylesheet"  media="all"><!-- / -->
+<!-- app design --><link href="app/css/app-3k-componetnts.css" rel="stylesheet"  media="all"><!-- / -->
 
 <!-- custom settings below-->
 
@@ -71,7 +74,7 @@ ga('send', 'pageview');
     <!-- logo -->
     <div class="elItem elLogo cLogo">
         <span class="cHomeLink"><img src="app/img/sheep.today.svg" height="48" /></span>
-        <h2>www.sheep.today</h2>
+        <h2 class="aDisplayAlias">www.sheep.today</h2>
     </div>
     <!-- endblock -->
 
@@ -79,11 +82,16 @@ ga('send', 'pageview');
     <nav class="elHeaderMenu cMenu">
         <ul>
             <li class="is-active"><a href="#Home">Home</a></li>
-            <li class=""><a href="gallery/page1.html">Gallery</a></li>
-            <li class=""><a href="http://sheep.today/products/book-latvia-atlas-gazania.html">Products</a></li>
+            <li class=""><a href="gallery/">Gallery</a></li>
+            <li class=""><a href="http://sheep.today/products/">Products</a></li>
             <li class=""><a href="#Contacts">Contacts</a></li>
         </ul>
     </nav>
+    <!-- endblock -->
+
+    <!-- page menu trigger -->
+    <div class="elMenuToolbar elMenuToolbar--placeholder">
+    </div>
     <!-- endblock -->
 
 </header>
@@ -122,10 +130,30 @@ ga('send', 'pageview');
     <section class="elItem content cTopCards">
         <div class="columns">
 
+<!-- ======================= card gallerySheep ======================= -->
+<style>
+    #card-gallerySheep { background-color:#F7E4BE; }
+</style>
+<blockquote id="card-gallerySheep" class="column">
+    <a
+        href="http://sheep.today/gallery/page2.html"
+        class="card has-default-hover has-contrast-color"
+        >
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img class="image" src="data/gallery/sheep/mois11-nov.svg">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h3 class="title"><span>Городовец / Sheep City</span></h3>
+            <h4 class="subtitle">web gallery</h4>
+        </div>
+    </a>
+</blockquote>
 
 <!-- ======================= card gazania ======================= -->
 <style>
-    #card-gazania { background-color:wheat; }
+    #card-gazania { background-color:#F0B49E; }
 </style>
 <blockquote id="card-gazania" class="column">
     <a
@@ -146,7 +174,7 @@ ga('send', 'pageview');
 
 <!-- ======================= card wallksy ======================= -->
 <style>
-    #card-wallksy { background-color:#D6E6C3; }
+    #card-wallksy { background-color:#B38184; }
 </style>
 <blockquote id="card-wallksy" class="column">
     <a
@@ -165,9 +193,13 @@ ga('send', 'pageview');
 </blockquote>
 
 
+        <!-- end first card row -->
+        </div>
+        <div class="columns">
+
 <!-- ======================= card html ======================= -->
 <style>
-    #card-html { background-color:#FFD8D8; }
+    #card-html { background-color:#99B898; }
 </style>
 <blockquote id="card-html" class="column">
     <a
@@ -186,24 +218,22 @@ ga('send', 'pageview');
     </a>
 </blockquote>
 
-
-        <!-- end first card row -->
-        </div>
-        <div class="columns">
-
-
 <!-- ======================= card ======================= -->
 <style>
     #card-ennoiart {
         color:white;
         background-color:#F099E0;
         background-image:url(data/banners/ennoiart.jpg);
+        /* is-two-thirds */
     }
 </style>
-<blockquote id="card-ennoiart" class="column is-two-thirds column-for-card">
+<blockquote id="card-ennoiart" class="column column-for-card">
     <a
         href="http://ennoiart.com/"
         class="card">
+        <div class="card-image">
+            <figure class="image is-4by3"></figure>
+        </div>
         <div class="card-content">
             <h3 class="title"><span>ennoiart.com</span></h3>
             <h4 class="subtitle">Colorful illustrations by Ennoia</h4>
@@ -221,6 +251,9 @@ ga('send', 'pageview');
     <a
         href="http://sheep.today/is/texts2014/"
         class="card">
+        <div class="card-image">
+            <figure class="image is-4by3"></figure>
+        </div>
         <div class="card-content">
             <h3 class="title"><span>Рассказы и картинки</span></h3>
             <h4 class="subtitle">Про зверей и людей</h4>
@@ -260,24 +293,23 @@ ga('send', 'pageview');
         <h2 class="aCaption">About the artist</h2>
         <div class="aDecor"></div>
     </header>
-    <section class="elItem content cContacts">
-        <div class="columns">
-
-            <div class="column is-one-third">
-
-                <h4 class="title">Зиновий Липинский</h4>
-                <h4 class="title subtitle">— Zinovi Lipinski</h4>
-                <h5 class="subtitle">графика и инфографика</h5>
-
-            </div>
-            <div class="column">
+    <section class="tufteDesign__mama">
+        <div class="tufteDesign">
+        <article>
+            <section>
+                <h2>Зиновий Липинский / Zinovi Lipinski</h2>
+                <p class="subtitle">
+                    графика и инфографика
+                </p>
+            </section>
+            <section>
                 <p>
                 На рисунках Зиновия — овечки с огромными глазами, толстые лисы, коты на крышах и крабы под пальмами. Все вместе, они участвуют в детализированных сюжетах, которые с восторгом рассматривают дети и взрослые дети.
                 </p>
                 <p>
                 Для самого автора, нарисованные персонажи — участники математической игры. Линии переходят в формы, формы превращаются в символы, в сюжет и смысл. Почти все рисунки Зиновия несут прикладную пользу — это карты, шпаргалки, чертежи или навигационные маркеры.
                 </p>
-                <h5>Интересные факты</h5>
+                <h3>Интересные факты</h3>
                 <p>
                 Зиновий шесть лет путешествовал по Франции и Германии. Ходил пешком через леса и горы. Где знакомился с местными жителями и животными. На средиземноморском побережье Камарга танцевал танго с розовыми фламинго.
                 </p>
@@ -287,7 +319,8 @@ ga('send', 'pageview');
                 <p>
                 По мнению Зиновия, процесс создания рисунка нельзя назвать творчеством. Этот этап больше похож на рутинную работу, тренировку усидчивости, решение головоломок и на медитацию. Настоящее творчество рождается в голове смотрящего.
                 </p>
-            </div>
+            </section>
+        </article>
         </div>
     </section>
 </article>
@@ -310,13 +343,9 @@ ga('send', 'pageview');
         <div class="columns">
             <div class="column">
 
-                <div class="columns">
-                    <div class="column is-one-third">
                         <figure class="media-left">
-                        <a href="#Home"><img src="zavatar.jpg" width="120" style="width:120px; border-radius:50%;" alt="sheep.today"></a>
+                        <img src="zavatar.jpg" width="120" style="width:120px; border-radius:50%;" alt="sheep.today">
                         </figure>
-                    </div>
-                    <div class="column">
                         <ul>
                             <li>
                                 <a class="elItem" href="mailto:sheep.today@gmail.com">sheep.today@gmail.com</a>
@@ -325,15 +354,13 @@ ga('send', 'pageview');
                                 <a class="elItem" href="https://www.facebook.com/jozef.dobric">facebook.com/jozef.dobric</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
 
             </div>
             <div class="column">
 
 
                 <section class="box">
-                <h4>Лайкни всё это</h4>
+                <h3>Поделись всем этим</h3>
                 <div class="social-likes">
                     <div data-service="facebook" title="Share link on Facebook">Facebook</div>
                     <div data-service="twitter" title="Share link on Twitter">Twitter</div>
@@ -344,30 +371,36 @@ ga('send', 'pageview');
 
 
                 <section class="box">
-                    <h4>Подпишись на новости сайта</h4>
+                    <h3>Подпишись на новости сайта</h3>
                     <p>
                         Почтовая рассылка будет выходить после обновлений на сайте.<br><br>
                         На русском языке расскажу что интересное появилось и какие анонсы на будущее.
                     </p>
                     <!-- Begin MailChimp Signup Form -->
-                    <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
                     <style type="text/css">
-                        /*#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }*/
                         #mc_embed_signup form { padding: 0; }
                     </style>
                     <div id="mc_embed_signup">
                     <form action="https://today.us16.list-manage.com/subscribe/post?u=f2f56449d7526a6a993997587&amp;id=122683d921" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <div id="mc_embed_signup_scroll">
                             <div class="mc-field-group">
-                                <label for="mce-EMAIL">Email Address </label>
-                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="example@email.adress">
+                                <div class="field">
+                                 <label for="mce-EMAIL">Email адрес </label>
+                                  <div class="control">
+                                    <input type="email" value="" name="EMAIL" class="input required email" id="mce-EMAIL" placeholder="example@email.address">
+                                  </div>
+                                </div>
                             </div>
                         <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
                         </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f2f56449d7526a6a993997587_122683d921" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        <div class="field">
+                            <div class="control">
+                                <input type="submit" value="Подписаться" name="subscribe" id="mc-embedded-subscribe" class="button">
+                            </div>
+                            </div>
                         </div>
                     </form>
                     </div>
@@ -439,19 +472,32 @@ ga('send', 'pageview');
 
     <!-- logo -->
     <div class="elItem elLogo cLogo">
-        <a href="http://sheep.today/"><img src="app/img/sheep.today.svg" height="44" /></a>
+        <a href="#Home"><img src="app/img/sheep.today.svg" height="44" /></a>
         <h2>www.sheep.today</h2>
     </div>
+    <!-- endblock -->
+
+    <!-- footer desktop menu -->
+    <nav class="elHeaderMenu cMenu">
+        <ul>
+            <li class=""><a href="#Home">↑ Scroll to Top</a></li>
+        </ul>
+    </nav>
     <!-- endblock -->
 
     <!-- aside menu trigger -->
     <div class="elItem elMenuTrigger cMenuTrigger jsMenuTrigger">
         <div class="elMenuTrigger__readyToOpen">
-            <span class="aIcon aIcon--hamburger"></span>
+            <span class="aIcon aIcon--home"></span>
         </div>
         <div class="elMenuTrigger__readyToClose">
             <span class="aIcon aIcon--close aIcon__contrast"></span>
         </div>
+    </div>
+    <!-- endblock -->
+    
+    <!-- page menu trigger -->
+    <div class="elMenuToolbar elMenuToolbar--placeholder">
     </div>
     <!-- endblock -->
 
