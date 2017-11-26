@@ -13,6 +13,7 @@ OCT 2017
 - иконка Hamburger (локальное меню)
 - картинка COOL
 
+- humans.txt
 
 -------------------------------------------------------------
 # Задачи ВНЕ
@@ -35,6 +36,10 @@ OCT 2017
 - Share twitter
 - Share vk
 - Pinterest akk
+
+- проверить технику
+https://css-tricks.com/contrast-swap-technique-improved-image-performance-css-filters/
+https://codepen.io/una/pen/NwPPEg
 
 ## Переписать галерею
 
