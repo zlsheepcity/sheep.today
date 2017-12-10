@@ -730,13 +730,22 @@ ul.aMarkUL {
 */
 
 .cCardeQuatCard {
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
+}
+@media screen and (min-width:1200px) {
+    .cCardeQuatCard {
+        padding: 1rem 2rem;
+    }
 }
 
 .cCardeQuatCard .aLink {
     display: inline-block;
     color:black;
     padding: .1em;
+}
+.cCardeQuatBox.content .cCardeQuatCard .title,
+.cCardeQuatCard .title {
+    margin-top: 1rem;
 }
 .cCardeQuatCard .title .aLink {
     border: 0px dotted rgba(255,0,0,.5);
@@ -750,17 +759,20 @@ ul.aMarkUL {
     background-color: rgba(255,0,0,.5);
     border-bottom-color: transparent;
 }
-.cCardeQuatCard .image {
-    will-change: transform;
-    -webkit-transition: transform .4s;
-    -o-transition: transform .4s;
-    transition: transform .4s;
-}
-.cCardeQuatCard .image:hover {
-    -webkit-transform: translateY(1rem);
-    -ms-transform: translateY(1rem);
-    -o-transform: translateY(1rem);
-    transform: translateY(1rem);
+
+@media screen and (min-width:1600px) {
+    .cCardeQuatCard .image {
+        will-change: transform;
+        -webkit-transition: transform .8s ease-out;
+        -o-transition: transform .8s ease-out;
+        transition: transform .8s ease-out;
+    }
+    .cCardeQuatCard .image:hover {
+        -webkit-transform: translateY(0.5rem);
+        -ms-transform: translateY(0.5rem);
+        -o-transform: translateY(0.5rem);
+        transform: translateY(0.5rem);
+    }
 }
 
 
