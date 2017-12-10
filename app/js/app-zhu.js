@@ -28,6 +28,18 @@ $(function(){
 
 });
 
+$(function(){
+    /* ## scroll reaction */
+    var jsMagicHeader = $('.elMagicHeader');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 136) {
+            jsMagicHeader.addClass("inPageMiddle");
+        } else {
+            jsMagicHeader.removeClass("inPageMiddle");
+        }
+    });
+});
+
 
 
 

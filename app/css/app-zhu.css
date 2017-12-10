@@ -446,6 +446,9 @@ ul.aMarkUL {
 
     background-color: rgba( 68, 42, 55, .1);
 }
+.cStageHeader .aSymbol {
+    color: rgba( 68, 42, 55, .15);
+}
 
 
 /*
@@ -738,24 +741,27 @@ ul.aMarkUL {
     }
 }
 
-.cCardeQuatCard .aLink {
+.cCardeQuatCard .aLinkDecoration {
     display: inline-block;
     color:black;
     padding: .1em;
+}
+.cCardeQuatCard .aLink {
+    color:black;
 }
 .cCardeQuatBox.content .cCardeQuatCard .title,
 .cCardeQuatCard .title {
     margin-top: 1rem;
 }
-.cCardeQuatCard .title .aLink {
+.cCardeQuatCard .title .aLinkDecoration {
     border: 0px dotted rgba(255,0,0,.5);
     border-bottom-width: 2px;
     -webkit-transition: background .2s;
     -o-transition: background .2s;
     transition: background .2s;
 }
-.cCardeQuatCard .title .aLink:hover,
-.cCardeQuatCard .image:hover+.title .aLink {
+.cCardeQuatCard .title .aLinkDecoration:hover,
+.cCardeQuatCard .image:hover+.title .aLinkDecoration {
     background-color: rgba(255,0,0,.5);
     border-bottom-color: transparent;
 }
@@ -763,9 +769,9 @@ ul.aMarkUL {
 @media screen and (min-width:1600px) {
     .cCardeQuatCard .image {
         will-change: transform;
-        -webkit-transition: transform .8s ease-out;
-        -o-transition: transform .8s ease-out;
-        transition: transform .8s ease-out;
+        -webkit-transition: transform .4s ease-out;
+        -o-transition: transform .4s ease-out;
+        transition: transform .4s ease-out;
     }
     .cCardeQuatCard .image:hover {
         -webkit-transform: translateY(0.5rem);
@@ -775,8 +781,42 @@ ul.aMarkUL {
     }
 }
 
+/**/
 
+/*
+-----------------------------------------------------
+# Landing components
+*/
+.LandingBody .elHeader {
+    /*display: none;*/
+}
+.elLandingCover {
+    /*height: 75vh;*/
+}
+.elLandingCover--default .elLandingCover__bgr {
+    /*position: fixed*/
+}
+.elLandingCover--default .elLandingCover__bgr .image {
+    padding: 10vw;
+    max-height: 75vh;
+    background-color: pink;
+}
+.elLandingCover--default .elLandingCover__bgr .image img {
+    max-height: 55vh;
+}
 
+/**/
+
+/*
+-----------------------------------------------------
+# Magic header with scroll
+*/
+
+.elMagicHeader.inPageMiddle {
+    background-color: pink;
+}
 
 
 /**/
+
+

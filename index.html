@@ -57,19 +57,46 @@ ga('send', 'pageview');
 <!-- app design --><link href="app/css/app-3k-componetnts.css" rel="stylesheet"  media="all"><!-- / -->
 
 <!-- custom settings below-->
+<style>
+    /* Default landing decorations */
+    .LandingBody {
+        background: top center no-repeat transparent;
+        background-color: #ECE5CE;
+        background-color: #C5E0DC;
+        background-image: url(data/promopic/Sheeps-Clothes.svg);
+        background-size: 60vw auto;
+        background-position: 50% 10vh;
+        background-attachment: fixed;
+    }
+    .elLandingCover {
+        width: 60vw;
+        margin: 0 auto;
+        border-top: 10vh solid transparent;
+        border-bottom: 5vh solid transparent;
+    }
+    .elLandingCover:after {
+        content: '';
+        display:block;
+        width:100%;
+        padding-top:58%;
+    }
+    .cMain {
+        background-color: #ECE5CE;
+    }
+</style>
 
 </head>
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
 <!-- =================================================== [NECK] -->
-<body class="elBody cBody">
-<section id="Home" class="elView">
+<body class="LandingBody elBody cBody">
+<section id="Home" class="elView cView">
 <!-- xxxxxxxx BEGIN ʕ⊙ᴥ⊙ʔ VIEW xxxxxxxx -->
 
 
 
 <!-- =================================================== view header -->
 
-<header class="elHeader cHeader">
+<header class="elHeader cHeader" >
 
     <!-- logo -->
     <div class="elItem elLogo cLogo">
@@ -96,6 +123,8 @@ ga('send', 'pageview');
 
 </header>
 
+<div class="elLandingCover"></div>
+
 <!-- =================================================== view main -->
 
 <main class="elMain cMain">
@@ -103,19 +132,7 @@ ga('send', 'pageview');
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
 <!-- =================================================== [CONTENT START] -->
 
-
 <!-- ======================= top section ======================= -->
-
-<style>
-    #Cover-Welcome {
-        background-color: #C5E0DC;
-    }
-</style>
-<section id="Cover-Welcome" class="elItem content cCoverWelcome">
-    <figure class="image">
-        <img src="data/promopic/Sheeps-Clothes.svg">
-    </figure>
-</section>
 
 
 <!-- ======================= current products ======================= -->
@@ -124,7 +141,7 @@ ga('send', 'pageview');
 <article>
     <header class="cStageHeader">
         <div class="aDecor"></div>
-        <h2 class="aCaption">В тренде / In trend</h2>
+        <h2 class="aCaption">В тренде <span class="aSymbol">/</span> In trend</h2>
         <div class="aDecor"></div>
     </header>
 
@@ -141,11 +158,11 @@ ga('send', 'pageview');
                 ></a>
             </figure>
             <h3 class="title">
-                <a class="aLink"
+                <span class="aLinkDecoration"><a class="aLink"
                     href="#"
                 >
                     Web gallery «Sheep City»
-                </a>
+                </a></span>
             </h3>
             <h4 class="subtitle">
                 <a class="aLink"
@@ -167,17 +184,17 @@ ga('send', 'pageview');
                 ></a>
             </figure>
             <h3 class="title">
-                <a class="aLink"
+                <span class="aLinkDecoration"><a class="aLink"
                     href="#"
                 >
-                    Картинки и рассказы об овечках «Sheep City»
-                </a>
+                    Сувениры / Gifts
+                </a></span>
             </h3>
             <h4 class="subtitle">
                 <a class="aLink"
                     href="#"
                 >
-                    Картинки и рассказы об овечках
+                    New product: Calendar-2018
                 </a>
             </h4>
         </section>
@@ -188,22 +205,22 @@ ga('send', 'pageview');
                 <a
                     href="#"
                 ><img class="image"
-                    src="data/gallery/sheep/mois11-nov.svg"
+                    src="data/landing/wallksy.svg"
                     alt=""
                 ></a>
             </figure>
             <h3 class="title">
-                <a class="aLink"
+                <span class="aLinkDecoration"><a class="aLink"
                     href="#"
                 >
-                    Web gallery «Sheep City»
-                </a>
+                    Telegram sticker set
+                </a></span>
             </h3>
             <h4 class="subtitle">
                 <a class="aLink"
                     href="#"
                 >
-                    Картинки и рассказы об овечках
+                    Vector icons
                 </a>
             </h4>
         </section>
@@ -628,7 +645,7 @@ ga('send', 'pageview');
 
 <!-- =================================================== mobile header -->
 
-<nav class="elHeader elHeaderMobile cHeader">
+<nav class="elMagicHeader elHeaderMobile elHeader cHeader">
 
     <!-- logo -->
     <div class="elItem elLogo cLogo">

@@ -50,6 +50,10 @@ a:active  { color: #F67280; }
 */
 
 
+.aDisplayAlias {
+    display: none;
+}
+
 
 
 /*
@@ -336,7 +340,7 @@ body.hasFocusedShadow .aFocusedShadow__container {
         background-color: #fff;
     }
     .elView {
-        padding-top: 40px;
+        padding-top: 0px;
     }
     .elHeaderMobile > .elLogo {
         flex-grow: 1;
