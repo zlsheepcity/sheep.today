@@ -723,3 +723,48 @@ ul.aMarkUL {
 }
 
 /**/
+
+/*
+-----------------------------------------------------
+# Card design cCardeQuat
+*/
+
+.cCardeQuatCard {
+    padding: 1rem 4rem;
+}
+
+.cCardeQuatCard .aLink {
+    display: inline-block;
+    color:black;
+    padding: .1em;
+}
+.cCardeQuatCard .title .aLink {
+    border: 0px dotted rgba(255,0,0,.5);
+    border-bottom-width: 2px;
+    -webkit-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+}
+.cCardeQuatCard .title .aLink:hover,
+.cCardeQuatCard .image:hover+.title .aLink {
+    background-color: rgba(255,0,0,.5);
+    border-bottom-color: transparent;
+}
+.cCardeQuatCard .image {
+    will-change: transform;
+    -webkit-transition: transform .4s;
+    -o-transition: transform .4s;
+    transition: transform .4s;
+}
+.cCardeQuatCard .image:hover {
+    -webkit-transform: translateY(1rem);
+    -ms-transform: translateY(1rem);
+    -o-transform: translateY(1rem);
+    transform: translateY(1rem);
+}
+
+
+
+
+
+/**/
