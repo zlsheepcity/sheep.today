@@ -811,9 +811,38 @@ ul.aMarkUL {
 -----------------------------------------------------
 # Magic header with scroll
 */
+.elMagicHeader {
+    position:fixed;
+    z-index:8;
+    top:0;
+    left:0;
+    right:0;
+    min-height:20px;
+}
+.elMagicHeader .isWhenReadyToOpen { display:block; }
+.elMagicHeader .isWhenReadyToClose { display:none; }
+.elBody--asideIsOpen .elMagicHeader .isWhenReadyToOpen { display:none; }
+.elBody--asideIsOpen .elMagicHeader .isWhenReadyToClose { display:block; }
 
-.elMagicHeader.inPageMiddle {
-    background-color: pink;
+.cMagicHeader .bHeaderMenu {
+    transition: transform .2s;
+    transform: translateY(-100%);
+    background-color: #FFCB01;
+}
+.cMagicHeader.inPageMiddle .bHeaderMenu {
+    transform: translateY(0);
+}
+.cMagicHeader .tacticsheep {
+    width: 64px;
+    height: auto;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.cMagicHeader .tacticsheep svg {
+    max-width: 100%;
+    height: auto;
 }
 
 

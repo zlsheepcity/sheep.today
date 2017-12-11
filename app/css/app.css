@@ -138,6 +138,7 @@ a:active  { color: #F67280; }
 }
 .elView,
 .elAside,
+.elMagicHeader,
 .elHeaderMobile,
 .elPageMenuTrigger--isFloat {
     -webkit-transition: transform .25s ease-in;
@@ -154,6 +155,7 @@ a:active  { color: #F67280; }
 }
 .elBody--asideIsOpen .elView,
 .elBody--asideIsOpen .elAside,
+.elBody--asideIsOpen .elMagicHeader,
 .elBody--asideIsOpen .elHeaderMobile {
     transform: translateX(200px);
 }
