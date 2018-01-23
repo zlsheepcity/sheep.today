@@ -490,7 +490,7 @@ Blog style data
         padding-right: 4rem;
     }
 }
-.cBlog + .cBlog {
+.cBlog + .cBlog:not(.cBlog__topics) {
     padding-left: 0;
 }
 .cBlogCard + .cBlogCard {
