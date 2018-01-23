@@ -1,0 +1,599 @@
+/* app4K css components
+v2017.12.17 app4K.4001
+*/
+
+/*
+--------------------------------------------------- 
+*/
+
+.cTitleAsSub {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.cTitleAsSub + * {
+    margin-top: 1rem;
+}
+.cTitleAsTip {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1rem;
+    opacity: .5;
+}
+* + .cTitleAsTip {
+    margin-top: 1rem;
+}
+.cTitleAsTip + *:not(.cTitleAsSub) {
+    margin-top: 1rem;
+}
+.cTitleAsBlock {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 2rem;
+}
+.cTitleAsBlock + *:not(.cTitleAsSub) {
+    margin-top: 2rem;
+}
+.cTitleAsTextline {
+    
+}
+.cTextAsNotice {
+    border-left: 4px solid #FC9D9A;
+    padding-left: 1rem;
+    
+}
+
+.button {
+    background-color: #FC9D9A;
+    font-weight: bold;
+}
+
+
+/*
+--------------------------------------------------- text design
+*/
+
+/*
+.textDesign p {
+    margin: 0;
+    padding-bottom: 1em;
+}
+.textDesign p:last-child {
+    padding-bottom: 0;
+}
+*/
+
+/* links */
+
+.textDesign a:link,
+.textDesign a:visited {
+    color: inherit;
+}
+.textDesign a:link {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#333, #333);
+    background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(#333, #333);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .textDesign a:link {
+        background-position-y: 87%, 87%, 87%;
+    }
+}
+.textDesign a:link::selection {
+    text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+    background: #b4d5fe;
+}
+.textDesign a:link::-moz-selection {
+    text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+    background: #b4d5fe;
+}
+.textDesign .aTextHighlight {
+    display: inline-block;
+    background-color: #FC9D9A;
+}
+
+.textLayout {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+.textLayout .aList {
+    margin-bottom: 0;
+}
+
+
+/*
+--------------------------------------------------- 
+*/
+
+.cDcFloatButton .aIcon {
+    font-size: 4rem;
+}
+@media all and (max-width:900px){
+    .cDcFloatButton .aIcon {
+        font-size: 8vw;
+    }
+}
+
+/*
+--------------------------------------------------- 
+*/
+
+.cLayerContrast {
+    background-color: #033649;
+    color: #E8DDCB;
+}
+.cLayerContrast a {
+    color: #E8DDCB;
+}
+.cLayerContrast .dCaption,
+.cLayerContrast .cTitleAsTip,
+.cLayerContrast .cTitleAsBlock,
+.cLayerContrast .cStageHeader .aCaption {
+    color: #CDB380;
+}
+.cLayerContrast .cStageHeader::before,
+.cLayerContrast .cStageHeader::after {
+    background-color: rgba(205, 179, 128, 0.25);
+}
+
+.cLayerContrast--opposition {
+    background-color: #031634;
+}
+
+/*
+--------------------------------------------------- 
+*/
+
+.cMainNav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin-left: -8px;
+    font-size: 1.4rem;
+}
+.cMainNav > * {
+    display: inline-block;
+    padding: 8px;
+}
+.cMainNav a {
+    color: #033649;
+}
+.cMainNav a.is-active {
+    text-decoration: none;
+}
+
+/*
+--------------------------------------------------- 
+*/
+
+.cSecretChamber {
+    padding: 4px 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-size:2rem;
+    text-align:center;
+    font-style:italic;
+}
+.cSecretChamber:before {
+    content: '';
+    display: block;
+    height: 9rem;
+}
+
+/*
+Stage header
+*/
+
+.cStageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+.cStageHeader--noAnchor {
+    padding-top: 1rem;
+}
+.cStageHeader .aCaption {
+    display: inline-block;
+    flex-grow: 0;
+    margin: 0;
+    padding: 0;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #442a37;
+}
+.cStageHeader::before,
+.cStageHeader::after {
+    content:'';
+    display: block;
+    flex-grow: 1;
+    height: 1rem;
+    background-color: #E8DDCB;
+}
+.cStageHeader .aSymbol {
+    color: #E8DDCB;
+}
+@media all and (max-width:900px) {
+    .cStageHeader:not(.cStageHeader--noAnchor) {
+        padding-top: 10vw;
+    }
+    .cStageHeader .aCaption {
+        font-size: 2.1rem;
+    }
+}
+
+/*
+---------------------------------------------------
+*/
+
+.cSiteHeader {
+    display: block;
+    position: relative;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+.cSiteHeader::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0.5rem;
+    left: -9rem;
+    width: 8rem;
+    height: 8rem;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.cSiteHeader .aTitle {
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+/*
+Landing intro section
+*/
+
+.cLanding__view {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+
+
+
+/*
+Default landing
+*/
+
+.cLandingDefault {
+    background-color: #E8DDCB;
+}
+
+.cLandingDefault .cLanding__view {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.cLandingDefault .cLanding__image {
+    width: 42%;
+}
+.cLandingDefault .cLanding__content {
+    padding-left: 8.5vw;
+    padding-right: 4vw;
+    width: 58%;
+}
+
+.cLandingDefault .aCard {
+    font-size: 2rem;
+}
+
+
+
+/*
+Card design cCardeQuat
+*/
+
+.cCardeQuatBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+.cCardeQuatCard {
+    padding: 1rem 2rem;
+    width: 33%;
+}
+@media screen and (min-width:1200px) {
+    .cCardeQuatCard {
+        padding: 2rem 4rem;
+        max-width: calc( 600px + 8rem );
+    }
+}
+
+.cCardeQuatCard .aLinkDecoration {
+    display: inline-block;
+    color:black;
+    padding: .1em;
+}
+.cCardeQuatCard .aLink {
+    color:black;
+    text-decoration: none;
+}
+.cCardeQuatCard .aTitle {
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    font-size: 2.1vw;
+    font-weight: 400;
+}
+.cCardeQuatCard .aSubtitle {
+    padding: 0;
+    margin: 0;
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+@media screen and (min-width:1200px) {
+    .cCardeQuatCard .aTitle {
+        font-size:1.7rem;
+    }
+    .cCardeQuatCard .aSubtitle {
+        font-size:1.4rem;
+    }
+}
+.cCardeQuatCard .aLinkDecoration {
+    border: 0px solid rgba(255,0,0,.5);
+    border-bottom-width: 2px;
+    -webkit-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+}
+.cCardeQuatCard .aTitle .aLinkDecoration:hover,
+.cCardeQuatCard .cCardeQuatCard__image:hover+.cCardeQuatCard__footer  .aLinkDecoration {
+    background-color: rgba(255,0,0,.5);
+    border-bottom-color: transparent;
+}
+
+@media screen and (min-width:1600px) {
+    .cCardeQuatCard .cCardeQuatCard__image {
+        will-change: transform;
+        -webkit-transition: transform .4s ease-out;
+        -o-transition: transform .4s ease-out;
+        transition: transform .4s ease-out;
+    }
+    .cCardeQuatCard .cCardeQuatCard__image:hover {
+        -webkit-transform: translateY(0.5rem);
+        -ms-transform: translateY(0.5rem);
+        -o-transform: translateY(0.5rem);
+        transform: translateY(0.5rem);
+    }
+}
+
+/* modile card */
+@media (max-width:900px) and (min-width:601px) {
+    .cCardeQuatCard {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .cCardeQuatCard__footer {
+        text-align: center;
+    }
+    .cCardeQuatCard .aTitle {
+        font-size:1.2rem;
+    }
+    .cCardeQuatCard .aSubtitle {
+        font-size:1rem;
+    }
+}
+@media all and (max-width:600px) {
+    .cCardeQuatBox {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .cCardeQuatCard {
+        width: 100%;
+        padding-left: 8vw;
+        padding-right: 2vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+    }
+    .cCardeQuatCard__footer {
+        order: 1;
+    }
+    .cCardeQuatCard__image {
+        width: 24vw;
+        max-width: 160px;
+        order: 2;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .cCardeQuatCard .aTitle {
+        font-size:1.5rem;
+    }
+    .cCardeQuatCard .aSubtitle {
+        font-size:1.2rem;
+    }
+}
+
+/*
+Saturs block
+*/
+
+.cSaturs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.cSaturs > .cBlog__images {
+    width: 58%;
+    /*max-width: calc( 600px + 2rem );*/
+}
+.cSaturs > .cBlog__topics {
+    width: 42%;
+    flex-grow: 2;
+}
+
+
+/*
+Blog style data
+*/
+
+.cBlog {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+@media all and (min-width:1200px) {
+    .cBlog {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.cBlog + .cBlog {
+    padding-left: 0;
+}
+.cBlogCard + .cBlogCard {
+    margin-top: 2rem;
+}
+.cBlog__subsection {
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+.cBlogCard .aTitle {
+    font-weight: 400;
+    font-size: 1.4em;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+.cBlogCard .aSubtitle {
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+/*
+Contacts
+*/
+
+.cContactArea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.cContactArea__from {
+    padding-left: 4rem;
+}
+@media all and (max-width:600px) {
+    .cContactArea {
+        flex-direction: column;
+    }
+    .cContactArea__from {
+        padding-left: 0rem;
+        padding-top: 2rem;
+    }
+}
+
+/**/
+
+.cSomethingCompletelyDifferent {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.cSomethingCompletelyDifferent .aBlock + .aBlock {
+    padding-left: 4rem;
+    padding-top: 0;
+}
+@media all and (max-width:600px) {
+    .cSomethingCompletelyDifferent {
+        flex-direction: column;
+    }
+    .cSomethingCompletelyDifferent .aBlock + .aBlock {
+        padding-left: 0rem;
+        padding-top: 2rem;
+    }
+}
+
+/**/
+
+.cBottomGoodbye {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.cBottomGoodbye__aside {
+    order: 2;
+    padding-left: 4rem;
+    width: 42%;
+}
+@media all and (max-width:600px) {
+    .cBottomGoodbye {
+        flex-direction: column;
+    }
+    .cBottomGoodbye__aside {
+        order: 1;
+        padding-left: 0rem;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+    .cBottomGoodbye__content {
+        order: 2;
+    }
+}
+
+/**/
