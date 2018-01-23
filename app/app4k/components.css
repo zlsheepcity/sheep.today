@@ -43,7 +43,9 @@ v2017.12.17 app4K.4001
 .cTextAsNotice {
     border-left: 4px solid #FC9D9A;
     padding-left: 1rem;
-    
+}
+.bTextIsHighlighted {
+    color: #FC9D9A;
 }
 
 .button {
@@ -206,10 +208,10 @@ Stage header
     align-items: center;
     text-align: center;
     padding-top: 4rem;
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
 }
 .cStageHeader--noAnchor {
-    padding-top: 1rem;
+    padding-top: 4rem;
 }
 .cStageHeader .aCaption {
     display: inline-block;
@@ -494,7 +496,7 @@ Blog style data
     padding-left: 0;
 }
 .cBlogCard + .cBlogCard {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 .cBlog__subsection {
     margin-top: 2rem;
@@ -513,6 +515,12 @@ Blog style data
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: .5em;
+}
+
+.cBlogCard .aImage {
+    text-align: left;
+    margin-left: 0;
+    max-width: 60%;
 }
 
 /*

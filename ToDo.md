@@ -4,27 +4,22 @@ OCT 2017
 # На прод
 -------------------------------------------------------------
 
-- team/
+- index.html
 
 
 -------------------------------------------------------------
 # Готовить контент
 -------------------------------------------------------------
 
-- https://t.me/addstickers/SheepTodayOffice
+- products
+- products/gazania
+- icons/OfficeStickers
+    https://t.me/addstickers/SheepTodayOffice
+- products/artworks
+- gallery
+- gallery/sheepcity
+- products/poster
 
-
-- иконки топ страниц на главной заменить на информативные
-
-- SVG содержание со стрелкой
-- иконка Home
-- иконка Hamburger (локальное меню)
-- картинка COOL
-
-## Овце-стикеры
-
-- всё получилось, спасибо!
-- всё готово. но ничего не работает
 
 
 
@@ -34,6 +29,12 @@ OCT 2017
 
 - участие в artPeople
 - участие на беханце
+
+## рисование
+
+- иконка Home
+- иконка Hamburger (локальное меню)
+- gallery/sheepcity → SVG содержание со стрелкой
 
 ## facebook page
 
