@@ -11,16 +11,15 @@ OCT 2017
 # Готовить контент
 -------------------------------------------------------------
 
-- products
-- products/gazania
-- icons/OfficeStickers
-    https://t.me/addstickers/SheepTodayOffice
-- products/artworks
+- products **
+- products/gazania **
+- icons/OfficeStickers **
+- products/artworks **
 - gallery
 - gallery/sheepcity
 - products/poster
 
-
+https://t.me/addstickers/SheepTodayOffice
 
 
 -------------------------------------------------------------
