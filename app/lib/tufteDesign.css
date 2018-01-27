@@ -89,6 +89,7 @@
 .tufteDesign article {
     position: relative;
     padding: 5rem 0rem;
+    padding-bottom: 0;
 }
 
 .tufteDesign section {

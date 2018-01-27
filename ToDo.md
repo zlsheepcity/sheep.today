@@ -20,6 +20,8 @@ OCT 2017
 - products/poster
 
 + you tube videos
++ sitemap page
++ about page
 
 https://t.me/addstickers/SheepTodayOffice
 

@@ -1,12 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
+<base href="../">
+<!-- frontent settings 12з.4001 app4K -- inner -->
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+<!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
+<!-- =================================================== [HEAD CONTENT] -->
+
 <title>web gallery</title>
-<meta name="description" content="" />
+<meta name="description" content="Images with sheeps by Sheep.today" />
 <meta name="author" content="zl-12з" />
 
 <!-- SOCIAL -->
+
 <meta property="og:title" content="web gallery — sheep.today" />
 <meta property="og:url" content="http://sheep.today/gallery/" />
 <meta property="og:type" content="article" />
@@ -17,15 +26,17 @@
 <meta property="og:image:height" content="628" />
 
 <!-- FAVICON -->
-<link rel="apple-touch-icon" href="../app/favicons/apple-icon-180x180.png">
-<link rel="icon" type="image/png" href="../app/favicons/android-icon-192x192.png">
-<link rel="manifest" href="../app/favicons/manifest.json">
+
+<link rel="apple-touch-icon" href="app/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" href="app/favicons/android-icon-192x192.png">
+<link rel="manifest" href="app/favicons/manifest.json">
 <meta name="msapplication-TileColor" content="#FFCC01">
-<meta name="msapplication-TileImage" content="../app/favicons/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="app/favicons/ms-icon-144x144.png">
 <meta name="theme-color" content="#FFCC01">
 
+<!-- // hey, google! -->
+
 <script>
-// hey google!
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -35,12 +46,7 @@ ga('send', 'pageview');
 </script>
 
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
-<!-- =================================================== [HEAD] -->
-
-<!-- frontent settings 12з.3xxx -->
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<!-- =================================================== [HEAD ENGINE] -->
 
 <!-- ## critical CSS -->
 
@@ -52,10 +58,15 @@ ga('send', 'pageview');
 
 <!-- ## libs -->
 
-<!-- bulma --><link href="../app/lib/bulma.css" rel="stylesheet"  media="all" /><!-- / -->
-<!-- tufte --><link href="../app/lib/tufteDesign.css" rel="stylesheet"  media="all" /><!-- / -->
-<!-- app design --><link href="../app/css/app.css" rel="stylesheet"  media="all" /><!-- / -->
-<!-- app design --><link href="../app/css/app-3k-componetnts.css" rel="stylesheet"  media="all" /><!-- / -->
+<!-- app --><link
+     href="app/app4k/app_bundle.css"
+     rel="stylesheet"  media="all" /><!-- / -->
+
+<!-- ## Theme CSS -->
+
+<style>
+
+</style>
 
 <!-- ## custom settings below-->
 
@@ -64,10 +75,52 @@ ga('send', 'pageview');
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
 <!-- =================================================== [NECK] -->
 <body class="elBody cBody">
-<section id="Start" class="elView">
+<div  class="elView cView">
+<!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
+<!-- =================================================== [landing screen] -->
 
 
+<section id="Home" class="cLanding cLandingDefault">
+    <header class="cSiteHeader cLanding__header bPrimarysheep">
+        <h2 class="aTitle">www.sheep.today</h2>
+        <nav class="cSiteHeader__menu">
 
+            <!-- -------------------------------------------------- main nav -->
+            <div class="cMainNav">
+                <a href="#Home" class="">Home</a>
+                <a href="gallery/" class="is-active">Gallery</a>
+                <a href="products/" class="">Products</a>
+                <a href="#Contacts" class="">Contacts</a>
+            </div>
+            <!-- endblock -->
+
+        </nav>
+    </header>
+    <div class="cLanding__view">
+
+        <!-- ================================================== landing content -->
+
+        <div class="cLanding__content">
+            <div class="aCard">
+                <h1 class="aTitle">Sheep on duty today!</h1>
+                <p>Sheep presents printed and digital <nobr><a href="products/" class="aTargetLink">gifts</a>.</nobr>
+                <!-- <nobr><a href="html/" class="aTargetLink">Education</a> materials.</nobr> -->
+                Funny <a href="gallery/page2.html" class="aTargetLink">cartoons</a> and <nobr><a href="is/texts2014/" class="aTargetLink">post modern</a>.</nobr></p>
+            </div>
+        </div>
+        <div class="cLanding__image">
+            <figure class="image">
+                <img src="data/landing/sheeps_phalanx_scetch.svg" alt=""/>
+            </figure>
+        </div>
+
+    </div>
+</section>
+
+
+<main class="elMain cMain">
+<!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
+<!-- =================================================== [CONTENT START] -->
 
 
 
@@ -197,87 +250,75 @@ ga('send', 'pageview');
 
 </main>
 
+
+
+
+<!-- =================================================== [CONTENT END] -->
+<!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
+</main>
 <!-- drop overlay om main -->
-<div class="elView__shadow jsMenuClose" data-action="close"></div>
-</section>
+<div class="elView__shadow jsAppTrigger" data-todo="close"></div>
+</div>
+<!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
+<!-- =================================================== [SUBCONTENT] -->
 
 
 
 
+<!-- =================================================== magic header -->
 
-
-
-
-<!-- =================================================== mobile header -->
-
-<section class="elHeader elHeaderMobile cHeader">
-
-    <div class="elItem elLogo cLogo">
-        <a href="#Start"><img src="../app/img/sheep.today.svg" height="44" /></a>
-        <h2 class="aDisplayAlias">www.sheep.today</h2>
-    </div>
-
-    <!-- footer desktop menu -->
-    <nav class="elHeaderMenu cMenu">
-        <ul>
-            <li class=""><a href="#Start">↑ Scroll to Top</a></li>
-        </ul>
-    </nav>
-    <!-- endblock -->
-
-    <!-- hamburger trigger -->
-    <div class="elItem elMenuTrigger cMenuTrigger jsMenuTrigger">
-        <div class="elMenuTrigger__readyToOpen">
-            <span class="aIcon aIcon--home"></span>
-        </div>
-        <div class="elMenuTrigger__readyToClose">
-            <span class="aIcon aIcon--close aIcon__contrast"></span>
-        </div>
-    </div>
-    <!-- endblock -->
-
-    <!-- page menu trigger -->
-    <div class="elMenuToolbar elMenuToolbar--placeholder">
-    </div>
-    <!-- endblock -->
-
-<!-- drop overlay om main -->
-<div class="elView__shadow jsMenuClose" data-action="close"></div>
-<!-- endblock -->
-</section>
-
-
-
-<!-- =================================================== aside panel -->
-
-<!-- aside menu -->
-<aside class="elAside cMenu cMenuAside">
-    <ul>
-        <li class=""><a href="../#Home">Home</a></li>
-        <li class="is-active"><a href="../gallery/">Gallery</a></li>
-        <li class=""><a href="../products/">Products</a></li>
-        <li class=""><a href="../#Contacts">Contacts</a></li>
-    </ul>
+<aside class="elMagicHeader cMagicHeader">
+        <nav class="cMainNav">
+            <a href="#Home"         class="is-active">Home</a>
+            <a href="gallery/"      class="">Gallery</a>
+            <a href="products/"     class="">Products</a>
+            <a href="#Contacts"     class="">Contacts</a>
+        </nav>
 </aside>
-<!-- endblock -->
+
+<!-- =================================================== site panel -->
+
+<aside class="elSidePanel cSitePanel">
+    <!-- trigger -->
+    <div class="elSitePanel__floatTrigger cSitePanel__floatTrigger isOnTop">
+        <div class="jsAppTrigger" data-trigga="hasOpenSitePanel">
+            <div class="isWhenInactive">
+                <button class="aIcon aIcon--chambersheep"></button>
+            </div>
+            <div class="isWhenActive">
+                <button class="aIcon aIcon--close aIcon__contrast"></button>
+            </div>
+        </div>
+    </div>
+    <!-- endblock -->
+    <div class="elSitePanel__layout cSitePanel__layout cLayerContrast cSecretChamber">
+        <div>
+            Вы нашли секретную комнату!
+            <br><br>
+            You found secret place!
+        </div>
+        <div>
+            <a href="sitemap.html">[DEV:SITEMAP]</a>
+        </div>
+        <figure class="image">
+            <img src="app/img/LuiSheep.svg" alt="sheep"/>
+        </figure>
+    </div>
+</aside>
 
 
 
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
 <!-- =================================================== [GROUND] -->
 
-<!-- zepto --><script src="../app/lib/zepto.js"></script><!-- / -->
-<!-- zzz -->
-    <script src="../app/lib/zzz.js"></script>
-    <script type="text/javascript">
-        $(function(){zzz.init("#ffffff");});
-    </script>
-    <!-- / -->
-<!-- social likes -->
-    <link href="../app/lib/social-likes_flat.css" rel="stylesheet"  media="screen" />
-    <script src="../app/lib/social-likes.js"></script>
-    <!-- / -->
-<!-- app engine --><script src="../app/js/app.js"></script><!-- / -->
+<!-- app libs --><script
+     src="app/app4k/app_bundle.js"
+     ></script><!-- / -->
+
+<!-- =================================================== [Third Tools] -->
+
+<!-- mailchimp --><script type='text/javascript'src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>$(function($) {window.fnames = new Array(); window.ftypes = new Array(); fnames[0]='EMAIL'; ftypes[0]='email'; fnames[1]='FNAME'; ftypes[1]='text'; fnames[2]='LNAME'; ftypes[2]='text'; fnames[3]='BIRTHDAY'; ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script><!-- / -->
+
 
 </body>
 </html>

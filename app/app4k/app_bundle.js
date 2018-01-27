@@ -300,13 +300,13 @@ $(function(){
     }
 
     // magic header on scroll down
-    var scrollOffsetForMagicHeader = 900;
+    var scrollOffsetForMagicHeader = $('.cLanding').offset().height;
     var qBody = $('.elBody');
     var qSitePanelTrigger = $('.cSitePanel__floatTrigger');
     $(window).scroll(function () {
         var s = $(this).scrollTop();
 
-        if ( s > scrollOffsetForMagicHeader - 100 ) {
+        if ( s > scrollOffsetForMagicHeader ) {
             qSitePanelTrigger.removeClass("isOnTop");
         } else {
             qSitePanelTrigger.addClass("isOnTop");

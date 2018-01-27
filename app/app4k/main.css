@@ -28,6 +28,34 @@ body {
     box-sizing: inherit;
 }
 
+/* appTheme */
+
+html {
+    font-size: 15px;
+}
+@media all and (min-width:1600px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media all and (max-width:1200px){
+    html {
+        font-size: calc( 8px + 0.5vw );
+    }
+}
+@media all and (max-width:600px){
+    html {
+        font-size: 10px;
+    }
+}
+body {
+    background-color: #fffff8;
+    color: #111;
+    font-family: "Vollkorn", et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    line-height: 1.4;
+}
+
+
 /*
 --------------------------------------------------- integration
 */
@@ -160,7 +188,7 @@ Magic Header
 /* design */
 
 .cMagicHeader {
-    background-color: #E8DDCB;
+    background-color: #dec7a0;
     padding: 0 4rem;
     padding-left: 12.5%;
 
@@ -222,6 +250,7 @@ Site Panel
 }
 
 /* design */
+
 .cSitePanel__floatTrigger {
     will-change: transform;
     -webkit-transition: transform .2s ease-out;
@@ -239,9 +268,9 @@ Site Panel
 }
 @media all and (min-width:1200px){
     .cSitePanel__floatTrigger .isWhenInactive .aIcon {
-        -webkit-transition: all .2s ease-out;
-        -o-transition: all .2s ease-out;
-        transition: all .2s ease-out;
+        -webkit-transition: transform .2s ease-out;
+        -o-transition: transform .2s ease-out;
+        transition: transform .2s ease-out;
     }
 }
 .cSitePanel__floatTrigger .aIcon {
@@ -253,7 +282,7 @@ Site Panel
     }
 }
 .cSitePanel__layout {
-    width: 300px;
+    width: 500px;
     background-color: #BBB;
 }
 @media all and (max-width:600px){
