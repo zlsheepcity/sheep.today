@@ -1,7 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-<!-- frontent settings 12з.4001 app4K ## InnerI -->
+<base href="../">
+<!-- frontent settings 12з.4001 app4K -- inner -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -26,11 +27,11 @@
 
 <!-- FAVICON -->
 
-<link rel="apple-touch-icon" href="../app/favicons/apple-icon-180x180.png">
-<link rel="icon" type="image/png" href="../app/favicons/android-icon-192x192.png">
-<link rel="manifest" href="../app/favicons/manifest.json">
+<link rel="apple-touch-icon" href="app/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" href="app/favicons/android-icon-192x192.png">
+<link rel="manifest" href="app/favicons/manifest.json">
 <meta name="msapplication-TileColor" content="#FFCC01">
-<meta name="msapplication-TileImage" content="../app/favicons/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="app/favicons/ms-icon-144x144.png">
 <meta name="theme-color" content="#FFCC01">
 
 <!-- // hey, google! -->
@@ -56,7 +57,7 @@ ga('send', 'pageview');
 </style>
 
 <!-- bundle --><link
-     href="../app/app4k/app_bundle.css"
+     href="app/app4k/app_bundle.css"
      rel="stylesheet"  media="all" /><!-- / -->
 
 <!-- ## custom settings below-->
@@ -77,17 +78,17 @@ ga('send', 'pageview');
 <!-- =================================================== [landing screen] -->
 
 
-<section id="Home" class="cLanding cLandingDefault">
+<section id="Home" class="cLanding cLandingDefault tmplGallery--cLanding">
     <header class="cSiteHeader cLanding__header bPrimarysheep">
         <h2 class="aTitle">www.sheep.today</h2>
         <nav class="cSiteHeader__menu">
 
             <!-- -------------------------------------------------- main nav -->
             <div class="cMainNav">
-                <a href="../"            class="">Home</a>
-                <a href="../gallery/"    class="">Gallery</a>
-                <a href="../products/"   class="is-active">Products</a>
-                <a href="../#Contacts"   class="">Contacts</a>
+                <a href="./#Home" class="">Home</a>
+                <a href="gallery/" class="">Gallery</a>
+                <a href="products/" class="is-active">Products</a>
+                <a href="./#Contacts" class="">Contacts</a>
             </div>
             <!-- endblock -->
 
@@ -105,7 +106,7 @@ ga('send', 'pageview');
         </div>
         <div class="cLanding__image">
             <figure class="image">
-                <img src="../data/demo/writing.svg" alt=""/>
+                <img src="data/demo/writing.svg" alt=""/>
             </figure>
         </div>
 
@@ -217,31 +218,30 @@ ga('send', 'pageview');
     <div class="cContactArea__to">
         <h3 class="cTitleAsTip">Direct contact</h3>
         <div class="cTitleAsBlock">
-            <div>
+            <p>
                 Мы не магазин, но рады общаться лично. Если что-то понравилось, напишите письмо! Мы очень любим, когда люди пользуются нашими сувенирами.
-            </div>
-            <div class="bTextIsHighlighted">E-mail is the best way to communicate</div>
-            <div class="cTextAsNotice--no">
+            </p>
+            <p class="bTextIsHighlighted">E-mail is the best way to communicate</p>
+            <p class="cTextAsNotice--no">
                 <a href="mailto:sheep.today@gmail.com">sheep.today@gmail.com</a>
-            </div>
+            </p>
         </div>
     </div>
     <div  class="cContactArea__from">
         <h3 class="cTitleAsTip">Info</h3>
 
-        <div>
-            Сувениры хранятся на складе в Риге, Латвия.
-        </div>
 
-        <h4 class="cTitleAsBlock">Sheep.Today News</h4>
-        <div class="cTitleAsSub">Newsletter in russian</div>
-        
+        <div class="cItemWithImage">
+            <div class="cTextAsNotice">
+                <h4 class="cTitleAsBlock">Рассылка Sheep.Today</h4>
+                <p class="cTitleAsSub">Когда у нас появляются новые сувениры, мы отправляем письмо. Подпишитесь на рассылку, если хотите следить за обновлениями.</p>
+                <p class="cTitleAsSub">Newsletter in russian</p>
+            </div>
+            <div class="cItemWithImage__image cContactArea__illustrationIcon"></div>
+        </div>
 
         <!-- Begin MailChimp Signup Form -->
         <div class="elForm cForm" id="mc_embed_signup">
-            <div class="cTextAsNotice">
-                <p>Когда у нас появляются новые сувениры, мы отправляем письмо. Подпишитесь на рассылку, если хотите следить за обновлениями.</p>
-            </div>
             <form action="https://today.us16.list-manage.com/subscribe/post?u=f2f56449d7526a6a993997587&amp;id=122683d921" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
                     <div class="field mc-field-group">
@@ -276,9 +276,19 @@ ga('send', 'pageview');
 
 <div class="elLayer cLayerContrast cLayerContrast--opposition textLayout">
     <section class="elSection cBottomGoodbye">
+        <div class="aBlock cBottomGoodbye__content">
+            <figure class="cBottomGoodbye__sheep">
+                <img src="app/img/car-sheep-red.svg" alt="Thank you!">
+            </figure>
+            <h2 class="cTitleAsBlock">Зиновий и более трёхсот овец</h2>
+            <div>
+                <a href="mailto:sheep.today@gmail.com">sheep.today@gmail.com</a><br>
+                zl 2018<br><br>
+            </div>
+        </div>
         <div class="aBlock cBottomGoodbye__aside">
             <figure class="image">
-                <img src="../app/img/sheep.today.white.svg" />
+                <img src="app/img/sheep.today.white.svg" />
             </figure>
             <h3 class="cTitleAsTip">Лайкни</h3>
             <div class="social-likes">
@@ -288,20 +298,9 @@ ga('send', 'pageview');
                 <div data-service="vkontakte" title="Share link on Vkontakte">Vkontakte</div>
             </div>
         </div>
-        <div class="aBlock cBottomGoodbye__content">
-            <h2 class="cTitleAsBlock">
-                Спасибо, до свидания!<br>
-                Thank you! Come again!<br>
-            </h2>
-            <div>
-                <a href="mailto:sheep.today@gmail.com">sheep.today@gmail.com</a><br>
-                Зиновий и более трёхсот овец.<br>
-                zl 2018<br><br>
-            </div>
-
-        </div>
     </section>
 </div>
+
 
 
 
@@ -314,17 +313,14 @@ ga('send', 'pageview');
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
 <!-- =================================================== [SUBCONTENT] -->
 
-
-
-
 <!-- =================================================== magic header -->
 
 <aside class="elMagicHeader cMagicHeader">
         <nav class="cMainNav">
-            <a href="../"              class="">Home</a>
-            <a href="../gallery/"      class="">Gallery</a>
-            <a href="../products/"     class="is-active">Products</a>
-            <a href="../#Contacts"     class="">Contacts</a>
+            <a href="./#Home"         class="">Home</a>
+            <a href="gallery/"      class="">Gallery</a>
+            <a href="products/"     class="is-active">Products</a>
+            <a href="./#Contacts"     class="">Contacts</a>
         </nav>
 </aside>
 
@@ -335,7 +331,7 @@ ga('send', 'pageview');
     <div class="elSitePanel__floatTrigger cSitePanel__floatTrigger isOnTop">
         <div class="jsAppTrigger" data-trigga="hasOpenSitePanel">
             <div class="isWhenInactive">
-                <button class="aIcon aIcon--primarysheep"></button>
+                <button class="aIcon aIcon--chambersheep"></button>
             </div>
             <div class="isWhenActive">
                 <button class="aIcon aIcon--close aIcon__contrast"></button>
@@ -345,23 +341,28 @@ ga('send', 'pageview');
     <!-- endblock -->
     <div class="elSitePanel__layout cSitePanel__layout cLayerContrast cSecretChamber">
         <div>
-            Вы нашли секретную комнату!
-            <br><br>
-            You found secret place!
+            <div class="aTitle">Вы нашли секретную комнату</div>
+            <div class="aSubtitle">You found secret place</div>
         </div>
-        <figure class="image">
-            <img src="../app/img/LuiSheep.svg" alt="sheep"/>
+
+        <div class="cSecretChamber__itemArea">
+            
+            <a href="sitemap.html" class="cSecretChamber__item">
+                <span class="aIcon aIcon--sitemap"></span>
+                <span class="aLink">Картра сайта<br>Site map</span>
+            </a>
+        </div>
+        <figure class="cSecretChamber__image">
+            <img src="app/img/LuiSheep.svg" alt="sheep"/>
         </figure>
     </div>
 </aside>
-
-
 
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
 <!-- =================================================== [GROUND] -->
 
 <!-- app libs --><script
-     src="../app/app4k/app_bundle.js"
+     src="app/app4k/app_bundle.js"
      ></script><!-- / -->
 
 <!-- =================================================== [Third Tools] -->

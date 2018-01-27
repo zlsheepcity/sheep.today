@@ -15,8 +15,6 @@ OCT 2017
 - products/gazania **
 - icons/OfficeStickers **
 - products/artworks **
-- gallery
-- gallery/sheepcity
 - products/poster
 
 + you tube videos

@@ -65,7 +65,23 @@ ga('send', 'pageview');
 <!-- ## Theme CSS -->
 
 <style>
-
+    .tmplGallery--cLanding .cLanding__content {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        width: 100%;
+        padding-left: 0;
+    }
+    .tmplGallery--cLanding .aCard {
+        text-align: center;
+    }
+    .tmplGallery--cLanding .cCardeQuatBox {
+        padding-top: 2rem;
+    }
+    @media all and (min-width:600px){
+        .tmplGallery--cLanding .cCardeQuatCard {
+            width: 50%;
+        }
+    }
 </style>
 
 <!-- ## custom settings below-->
@@ -80,17 +96,17 @@ ga('send', 'pageview');
 <!-- =================================================== [landing screen] -->
 
 
-<section id="Home" class="cLanding cLandingDefault">
+<section id="Home" class="cLanding cLandingDefault tmplGallery--cLanding">
     <header class="cSiteHeader cLanding__header bPrimarysheep">
         <h2 class="aTitle">www.sheep.today</h2>
         <nav class="cSiteHeader__menu">
 
             <!-- -------------------------------------------------- main nav -->
             <div class="cMainNav">
-                <a href="#Home" class="">Home</a>
+                <a href="./#Home" class="">Home</a>
                 <a href="gallery/" class="is-active">Gallery</a>
                 <a href="products/" class="">Products</a>
-                <a href="#Contacts" class="">Contacts</a>
+                <a href="./#Contacts" class="">Contacts</a>
             </div>
             <!-- endblock -->
 
@@ -102,156 +118,110 @@ ga('send', 'pageview');
 
         <div class="cLanding__content">
             <div class="aCard">
-                <h1 class="aTitle">Sheep on duty today!</h1>
-                <p>Sheep presents printed and digital <nobr><a href="products/" class="aTargetLink">gifts</a>.</nobr>
-                <!-- <nobr><a href="html/" class="aTargetLink">Education</a> materials.</nobr> -->
-                Funny <a href="gallery/page2.html" class="aTargetLink">cartoons</a> and <nobr><a href="is/texts2014/" class="aTargetLink">post modern</a>.</nobr></p>
+                <h1 class="aTitle">Galleries list</h1>
+            </div>
+
+            <div class="cCardeQuatBox">
+                <!-- ======================================================= Card ༼°▽°༽ -->
+                <section class="cCardeQuatCard">
+                    <div class="cCardeQuatCard__image">
+                        <figure class="image is-4by3">
+                            <a
+                                href="gallery/page2.html"
+                            ><img class="image"
+                                src="data/landing/cardequate-SheepCity.jpg"
+                                alt=""
+                            ></a>
+                        </figure>
+                    </div>
+                    <footer class="cCardeQuatCard__footer">
+                        <h4 class="aTitle">
+                            <span class="aLinkDecoration"><a class="aLink"
+                                href="gallery/page2.html"
+                            >
+                                Городовец / Sheep City
+                            </a></span>
+                        </h4>
+                        <h5 class="aSubtitle">
+                            <a class="aLink"
+                                href="gallery/page2.html"
+                            >
+                                Экскурсия в сказочный город, в котором живут овечки
+                            </a>
+                        </h5>
+                    </footer>
+                </section>
+                <!-- ======================================================= Card ༼°▽°༽ -->
+                <section class="cCardeQuatCard">
+                    <div class="cCardeQuatCard__image">
+                        <figure class="image is-4by3">
+                            <a
+                                href="gallery/page1.html"
+                            ><img class="image"
+                                src="data/gallery/superfox-illbeback.jpg"
+                                alt="Fox terminator on the bike">
+                            ></a>
+                        </figure>
+                    </div>
+                    <footer class="cCardeQuatCard__footer">
+                        <h4 class="aTitle">
+                            <span class="aLinkDecoration"><a class="aLink"
+                                href="gallery/page1.html"
+                            >
+                                Дюжина разных рисунков
+                            </a></span>
+                        </h4>
+                        <h5 class="aSubtitle">
+                            <a class="aLink"
+                                href="gallery/page1.html"
+                            >
+                                С историями
+                            </a>
+                        </h5>
+                    </footer>
+                </section>
+                <!-- =================================== End Collumn ༼°▽°༽༼°▽°༽༼°▽°༽ -->
             </div>
         </div>
-        <div class="cLanding__image">
-            <figure class="image">
-                <img src="data/landing/sheeps_phalanx_scetch.svg" alt=""/>
+
+    </div>
+</section>
+
+
+<main class="elMain cMain">
+<!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
+<!-- =================================================== [CONTENT START] -->
+
+
+
+<!-- =================================================== The Ending -->
+
+<div class="elLayer cLayerContrast cLayerContrast--opposition textLayout">
+    <section class="elSection cBottomGoodbye">
+        <div class="aBlock cBottomGoodbye__content">
+            <figure class="cBottomGoodbye__sheep">
+                <img src="app/img/car-sheep-red.svg" alt="Thank you!">
             </figure>
-        </div>
-
-    </div>
-</section>
-
-
-<main class="elMain cMain">
-<!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
-<!-- =================================================== [CONTENT START] -->
-
-
-
-
-<!-- =================================================== view header -->
-
-<header class="elHeader cHeader">
-
-    <!-- logo -->
-    <div class="elItem elLogo cLogo">
-        <a href="http://sheep.today/" class="cHomeLink"><img src="../app/img/sheep.today.svg" height="48" /></a>
-        <h2 class="aDisplayAlias">www.sheep.today</h2>
-    </div>
-    <!-- endblock -->
-
-    <!-- header menu -->
-    <nav class="elHeaderMenu cMenu">
-        <ul>
-            <li class=""><a href="../#Home">Home</a></li>
-            <li class="is-active"><a href="../gallery/">Gallery</a></li>
-            <li class=""><a href="../products/">Products</a></li>
-            <li class=""><a href="../#Contacts">Contacts</a></li>
-        </ul>
-    </nav>
-    <!-- endblock -->
-
-    <!-- page menu trigger -->
-    <div class="elMenuToolbar elMenuToolbar--placeholder">
-    </div>
-    <!-- endblock -->
-
-</header>
-
-<!-- =================================================== view main -->
-
-<main class="elMain cMain">
-
-
-<!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
-<!-- =================================================== [CONTENT START] -->
-
-
-
-<section class="content">
-    <div class="columns">
-
-
-
-        <div class="column">
-            <div class="card">
-              <a href="page2.html" style="display: block;">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img
-                        src="../data/gallery/sheep/mois11-nov.svg"
-                        alt="Sheep in Sheep City">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="../data/web/reading_literature_books.svg" alt="Placeholder image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">Городовец / Sheep City</p>
-                    <p class="subtitle is-6">gallery page 2</p>
-                  </div>
-                </div>
-
-                <div class="content">
-                  Экскурсия в сказочный город, в котором живут овечки
-                  <br>
-                  <time datetime="2017-10-15">October 2017</time>
-                </div>
-              </div>
-              </a>
+            <h2 class="cTitleAsBlock">Зиновий и более трёхсот овец</h2>
+            <div>
+                <a href="mailto:sheep.today@gmail.com">sheep.today@gmail.com</a><br>
+                zl 2018<br><br>
             </div>
         </div>
-
-
-        <div class="column">
-            <div class="card">
-              <a href="page1.html" style="display: block;">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img
-                        src="../data/gallery/superfox-illbeback.jpg"
-                        alt="Fox terminator on the bike">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="../data/web/reading_literature_books.svg" alt="Placeholder image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">Just Pictures</p>
-                    <p class="subtitle is-6">gallery page 1</p>
-                  </div>
-                </div>
-
-                <div class="content">
-                  Дюжина интересных рисунков
-                  <br>
-                  <time datetime="2017-8-1">Summer 2017</time>
-                </div>
-              </div>
-              </a>
+        <div class="aBlock cBottomGoodbye__aside">
+            <figure class="image">
+                <img src="app/img/sheep.today.white.svg" />
+            </figure>
+            <h3 class="cTitleAsTip">Лайкни</h3>
+            <div class="social-likes">
+                <div data-service="facebook" title="Share link on Facebook">Facebook</div>
+                <div data-service="twitter" title="Share link on Twitter">Twitter</div>
+                <div data-service="pinterest" title="Share link on Pinterest" data-media="image link, required">Pinterest</div>
+                <div data-service="vkontakte" title="Share link on Vkontakte">Vkontakte</div>
             </div>
         </div>
-
-
-    </div>
-</section>
-
-
-
-
-
-
-<!-- =================================================== [CONTENT END] -->
-<!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
-
-</main>
-
-
-
+    </section>
+</div>
 
 <!-- =================================================== [CONTENT END] -->
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
@@ -262,17 +232,14 @@ ga('send', 'pageview');
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
 <!-- =================================================== [SUBCONTENT] -->
 
-
-
-
 <!-- =================================================== magic header -->
 
 <aside class="elMagicHeader cMagicHeader">
         <nav class="cMainNav">
-            <a href="#Home"         class="is-active">Home</a>
-            <a href="gallery/"      class="">Gallery</a>
+            <a href="./#Home"         class="">Home</a>
+            <a href="gallery/"      class="is-active">Gallery</a>
             <a href="products/"     class="">Products</a>
-            <a href="#Contacts"     class="">Contacts</a>
+            <a href="./#Contacts"     class="">Contacts</a>
         </nav>
 </aside>
 
@@ -293,20 +260,22 @@ ga('send', 'pageview');
     <!-- endblock -->
     <div class="elSitePanel__layout cSitePanel__layout cLayerContrast cSecretChamber">
         <div>
-            Вы нашли секретную комнату!
-            <br><br>
-            You found secret place!
+            <div class="aTitle">Вы нашли секретную комнату</div>
+            <div class="aSubtitle">You found secret place</div>
         </div>
-        <div>
-            <a href="sitemap.html">[DEV:SITEMAP]</a>
+
+        <div class="cSecretChamber__itemArea">
+            
+            <a href="sitemap.html" class="cSecretChamber__item">
+                <span class="aIcon aIcon--sitemap"></span>
+                <span class="aLink">Картра сайта<br>Site map</span>
+            </a>
         </div>
-        <figure class="image">
+        <figure class="cSecretChamber__image">
             <img src="app/img/LuiSheep.svg" alt="sheep"/>
         </figure>
     </div>
 </aside>
-
-
 
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
 <!-- =================================================== [GROUND] -->
@@ -316,9 +285,6 @@ ga('send', 'pageview');
      ></script><!-- / -->
 
 <!-- =================================================== [Third Tools] -->
-
-<!-- mailchimp --><script type='text/javascript'src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>$(function($) {window.fnames = new Array(); window.ftypes = new Array(); fnames[0]='EMAIL'; ftypes[0]='email'; fnames[1]='FNAME'; ftypes[1]='text'; fnames[2]='LNAME'; ftypes[2]='text'; fnames[3]='BIRTHDAY'; ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script><!-- / -->
-
 
 </body>
 </html>

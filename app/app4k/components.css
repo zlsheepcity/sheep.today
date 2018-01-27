@@ -1,5 +1,5 @@
 /* app4K css components
-v2017.12.17 app4K.4001
+v2018.1.27 sheep.today
 */
 
 /*
@@ -284,6 +284,7 @@ Stage header
     position: relative;
     margin-left: 12.5%;
     margin-right: 12.5%;
+    padding-bottom: 1rem;
 }
 .cSiteHeader::before {
     content: '';
@@ -342,7 +343,7 @@ Landing intro section
 }
 .cLanding__content .aTargetLink {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: baseline;
     border-bottom: 2px solid rgba(255,0,0,.25);
     padding: 0 2px;
     text-decoration: none;
@@ -649,8 +650,8 @@ Blog style data
     align-items: stretch;
     align-content: stretch;
 }
-.cItemWithImage__image {
-    padding-left: 1rem;
+.cItemWithImage > *:first-child {
+    padding-right: 1rem;
 }
 
 
@@ -665,6 +666,10 @@ Contacts
     justify-content: space-between;
     align-items: flex-start;
     align-content: flex-start;
+    padding-bottom: 3rem;
+}
+.cContactArea__to {
+    max-width: 58%;
 }
 .cContactArea__from {
     padding-left: 4rem;
@@ -672,6 +677,9 @@ Contacts
 @media all and (max-width:900px) {
     .cContactArea {
         flex-direction: column;
+    }
+    .cContactArea__to {
+        max-width: 100%;
     }
     .cContactArea__from {
         padding-left: 0rem;
