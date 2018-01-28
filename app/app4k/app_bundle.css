@@ -3,6 +3,8 @@ app4k css bundle
 v2018.1.27
 */
 
+charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700&subset=cyrillic');
 
 
 
@@ -1593,9 +1595,6 @@ background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNv
 /* app4K css base
 v2018.1.27 sheep.today
 */
-charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700&subset=cyrillic');
-
 
 /*
 --------------------------------------------------- basics
