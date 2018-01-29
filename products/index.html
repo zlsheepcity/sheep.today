@@ -64,6 +64,16 @@ ga('send', 'pageview');
 
 <style>
 
+    .cLayerContrast .cTitleAsTip {
+        opacity: 1;
+        color: #E8DDCB;
+    }
+    .cLayerContrast a:link {
+        text-shadow: none;
+        background: none;
+        text-decoration: underline;
+    }
+
 </style>
 
 
@@ -202,15 +212,17 @@ ga('send', 'pageview');
     <!-- ======================================================= Card ༼°▽°༽ -->
     <section class="cCardeListCard">
         <div class="cCardeListCard__image">
-            <a href="#">ART ICON</a>
+            <figure>
+                <a href="#">[IMG]</a>
+            <figure>
         </div>
         <div class="cCardeListCard__details">
-            <h4 class="cCardeListCard__caption">
+            <h3 class="cCardeListCard__caption">
                 <a href="#">Галерея с примерами картин</a>
-            </h4>
-            <div class="cCardeListCard__subcaption">
+            </h3>
+            <p class="cCardeListCard__subcaption">
                 Некоторые друзья просят нарисовать что-то особенное для себя или в подарок близким. На примерах можно посмотреть как описываются пожелания и какой получается результат.
-            </div>
+            </p>
         </div>
     </section>
     <!-- ===================================== End Collumn ༼°▽°༽༼°▽°༽༼°▽°༽ -->
@@ -223,7 +235,7 @@ ga('send', 'pageview');
 
 <!-- =================================================== Contacts -->
 
-<section class="elLayer">
+<section class="elLayer cLayerContrast">
 <header id="Contacts" class="cStageHeader">
     <h2 class="aCaption">Как заказать? <span class="aSymbol">/</span> How to order?</h2>
 </header>
@@ -250,7 +262,6 @@ ga('send', 'pageview');
                 <p class="cTitleAsSub">Оповещение о новых продуктах</p>
                 <p class="cTitleAsSub">Newsletter in russian</p>
             </div>
-            <div class="cItemWithImage__image cContactArea__illustrationIcon"></div>
         </div>
 
         <!-- Begin MailChimp Signup Form -->
