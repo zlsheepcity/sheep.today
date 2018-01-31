@@ -73,6 +73,34 @@ ga('send', 'pageview');
         background: none;
         text-decoration: underline;
     }
+    
+.tufteDesign .h2,
+.tufteDesign h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 0;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+.cCardeListCard:after {
+    content: 'ʕ⊙ᴥ⊙ʔ';
+    display: block;
+    width: 55%;
+    text-align: center;
+    padding: 2.1rem 0;
+    font-size: 2.1rem;
+    opacity: 0.5;
+}
+.cCardeListCard .h2 {
+    /**/
+}
+.cCardeListCard .promoimage {
+    margin-bottom: 0;
+}
+.cCardeListCard .promoimage + .h2 {
+    margin-top: 1.2rem;
+}
 
 </style>
 
@@ -142,52 +170,73 @@ ga('send', 'pageview');
 <div class="cCardeListBox">
     <!-- ======================================================= Card ༼°▽°༽ -->
     <section class="cCardeListCard">
-        <div class="cCardeListCard__image">
-            <figure>
-                <a href="#"><img src="data/products/productIcon__zlbookGazania.jpg" alt="Closed and opened book"</a>
-            <figure>
-        </div>
-        <div class="cCardeListCard__details">
-            <h3 class="cCardeListCard__caption">
-                <a href="#">Латвия: (не)географический атлас</a>
+            <figure class="promoimage">
+                <label 
+                    for="PRODUCT-01" class="margin-toggle">&#8853;</label><input type="checkbox" 
+                    id="PRODUCT-01" class="margin-toggle"/><span class="marginnote">
+                        <img src="data/demo/rhino.png" alt="Image of a Rhinoceros" class="zzz"/>
+                        F.J. Cole, “The History of Albrecht Dürer’s Rhinoceros in Zooological Literature,” <em>Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice</em> (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte’s <em>Visual Explanations</em>.
+                </span>
+                <a
+                    href="products/book-latvia-atlas-gazania.html"><img 
+                    src="data/products/productIcon__zlbookGazania.jpg" 
+                    alt="Closed and opened book"></a>
+            </figure>
+            <h3 class="h2">
+                <a href="products/book-latvia-atlas-gazania.html">
+                    Латвия: (не)географический атлас
+                </a>
             </h3>
-            <p class="cCardeListCard__subcaption">
+            <p>
                 Набор из 13 открыток соединённых в книжку. Географические карты регионов Латвии. Автомобильные дороги, города, реки и интересные достопримечательности.
             </p>
-        </div>
-    </section>
-    <!-- ======================================================= Card ༼°▽°༽ --
-    <section class="cCardeListCard">
-        <div class="cCardeListCard__image">
-            <a href="#">POSTER ICON</a>
-        </div>
-        <div class="cCardeListCard__details">
-            <h4 class="cCardeListCard__caption">
-                <a href="#">Двойной плакат «Город овец»</a>
-            </h4>
-            <div class="cCardeListCard__subcaption">
-                Комплект из двух плакатов (420mm × 594mm, A2) с иллюстрациями из жизни овец.
-            </div>
-        </div>
     </section>
     <!-- ======================================================= Card ༼°▽°༽ -->
     <section class="cCardeListCard">
-        <div class="cCardeListCard__image">
-            <figure>
-                <a href="#"><img src="data/products/productIcon__calendar2018.jpg" alt="Closed and opened calendar"</a>
-            <figure>
-        </div>
-        <div class="cCardeListCard__details">
-            <h3 class="cCardeListCard__caption">
-                <a href="#">Календарь на 2018 год</a>
+            <figure class="promoimage">
+                <label 
+                    for="PRODUCT-02" class="margin-toggle">&#8853;</label><input type="checkbox" 
+                    id="PRODUCT-02" class="margin-toggle"/><span class="marginnote">
+                        <img src="data/demo/rhino.png" alt="Image of a Rhinoceros" class="zzz"/>
+                        F.J. Cole, “The History of Albrecht Dürer’s Rhinoceros in Zooological Literature,” <em>Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice</em> (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte’s <em>Visual Explanations</em>.
+                </span>
+                <a
+                    href="products/index.html"><img 
+                    src="data/products/productIcon__posterDoubleSheep.jpg" 
+                    alt="Два постера и креветки с горошком"></a>
+            </figure>
+            <h3 class="h2">
+                <a href="products/index.html">
+                    Двойной плакат «Город овец»
+                </a>
             </h3>
-            <p class="subtitle cCardeListCard__notes">
-                <strong class="aWarning">кончились</strong> / <strong class="aWarning">out of stock</strong>
+            <p>
+                Комплект из двух плакатов (420mm × 594mm, A2) с иллюстрациями из жизни овец.
             </p>
-            <p class="cCardeListCard__subcaption">
+    </section>
+    <!-- ======================================================= Card ༼°▽°༽ -->
+    <section class="cCardeListCard">
+            <figure class="promoimage">
+                <label 
+                    for="PRODUCT-03" class="margin-toggle">&#8853;</label><input type="checkbox" 
+                    id="PRODUCT-03" class="margin-toggle"/><span class="marginnote">
+                    <span class="cCardeListCard__notes">
+                        <strong class="aWarning">кончились</strong> / <strong class="aWarning">out of stock</strong>
+                    </span>
+                </span>
+                <a
+                    href="products/index.html"><img 
+                    src="data/products/productIcon__calendar2018.jpg" 
+                    alt="Closed and opened calendar"></a>
+            </figure>
+            <h3 class="h2">
+                <a href="products/index.html">
+                    Календарь на 2018 год
+                </a>
+            </h3>
+            <p>
                 Настенный календарь с петлёй для крепления (297mm x 420mm, A3). Чёрно-белые иллюстрации каждого из 12 месяцев. Фазы луны.
             </p>
-        </div>
     </section>
     <!-- ===================================== End Collumn ༼°▽°༽༼°▽°༽༼°▽°༽ -->
 </div>
