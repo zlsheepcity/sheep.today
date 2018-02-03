@@ -1,7 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-<!-- frontent settings 12з.4001 app4K ## InnerI -->
+<base href="../">
+<!-- frontent settings 12з.4001 app4K -- inner -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -9,28 +10,28 @@
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
 <!-- =================================================== [HEAD CONTENT] -->
 
-
-<title>Artworks</title>
-<meta name="description" content="How to order your personal drawing" />
+<title>Products</title>
+<meta name="description" content="Printed gifts and personal art with sheep." />
 <meta name="author" content="zl-12з" />
 
 <!-- SOCIAL -->
 
-<meta property="og:title" content="Artworks" />
-<meta property="og:type" content="article" />
-<meta property="og:description" content="How to order your personal drawing" />
-<meta property="og:url" content="http://sheep.today/products/artwork-for-you.html" />
+<meta property="og:title" content="sheep.today" />
+<meta property="og:url" content="http://sheep.today/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:description" content="Printed gifts and personal art with sheep." />
 <meta property="og:image" content="http://sheep.today/data/promopic/Sheeps-Clothes.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="700" />
 
 <!-- FAVICON -->
 
-<link rel="apple-touch-icon" href="../app/favicons/apple-icon-180x180.png">
-<link rel="icon" type="image/png" href="../app/favicons/android-icon-192x192.png">
-<link rel="manifest" href="../app/favicons/manifest.json">
+<link rel="apple-touch-icon" href="app/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" href="app/favicons/android-icon-192x192.png">
+<link rel="manifest" href="app/favicons/manifest.json">
 <meta name="msapplication-TileColor" content="#FFCC01">
-<meta name="msapplication-TileImage" content="../app/favicons/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="app/favicons/ms-icon-144x144.png">
 <meta name="theme-color" content="#FFCC01">
 
 <!-- // hey, google! -->
@@ -56,12 +57,84 @@ ga('send', 'pageview');
 </style>
 
 <!-- bundle --><link
-     href="../app/app4k/app_bundle.css"
+     href="app/app4k/app_bundle.css"
      rel="stylesheet"  media="all" /><!-- / -->
 
 <!-- ## custom settings below-->
 
 <style>
+
+    .cLayerContrast .cTitleAsTip {
+        opacity: 1;
+        color: #E8DDCB;
+    }
+    .cLayerContrast a:link {
+        text-shadow: none;
+        background: none;
+        text-decoration: underline;
+    }
+    
+.tufteDesign .h2,
+.tufteDesign h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 0;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+.cCardeListCard:after {
+    content: 'ʕ⊙ᴥ⊙ʔ';
+    display: block;
+    width: 55%;
+    text-align: center;
+    padding: 2.1rem 0;
+    font-size: 2.1rem;
+    opacity: 0.5;
+}
+.cCardeListCard .h2 {
+    /**/
+}
+.cCardeListCard .promoimage {
+    margin-bottom: 0;
+}
+.cCardeListCard .promoimage + .h2 {
+    margin-top: 1.2rem;
+}
+
+
+.tufteDesign .h1, 
+.tufteDesign h1 {
+    font-weight: 400;
+    margin-top: 0rem;
+    padding-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
+}
+
+.tufteDesign .subtitle,
+.tufteDesign p.subtitle {
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    line-height: 1;
+}
+
+
+.cPriceInfo {
+    display: block;
+}
+.cPriceInfo .aText {
+    font-size: 1.2em;
+}
+.cPriceInfo .aPrice {
+    font-size: 2em;
+    color: darkgreen;
+    display: block;
+}
 
 </style>
 
@@ -77,7 +150,7 @@ ga('send', 'pageview');
 <!-- =================================================== [landing screen] -->
 
 
-<section id="Home" class="cLanding cLandingDefault">
+<section id="Home" class="cLanding cLandingDefault tmplGallery--cLanding">
     <header class="cSiteHeader cLanding__header bPrimarysheep">
         <h2 class="aTitle">www.sheep.today</h2>
         <nav class="cSiteHeader__menu">
@@ -113,7 +186,7 @@ ga('send', 'pageview');
         </div>
         <div class="cLanding__image">
             <figure class="image">
-                <img src="../data/demo/writing.svg" alt=""/>
+                <img src="data/demo/writing.svg" alt=""/>
             </figure>
         </div>
 
@@ -125,66 +198,156 @@ ga('send', 'pageview');
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
 <!-- =================================================== [CONTENT START] -->
 
-
 <section class="elLayer">
-<header id="Examples" class="cStageHeader">
-    <h2 class="aCaption">Примеры <span class="aSymbol">/</span> Examples</h2>
+<header class="cStageHeader cStageHeader--noAnchor">
+    <h2 class="aCaption">
+        Примеры <span class="aSymbol">/</span> Examples
+    </h2>
 </header>
-<div class="elSection">
-    <div class="cArtworkSamplesBox">
-        <!-- ======================================================= Card ༼°▽°༽ -->
-        <div class="cArtworkSample">
-            <div class="cArtworkSample__image">IMG</div>
-            <div class="cArtworkSample__caption">
-                <h3 class="aCaption">Both river sides of Aizkraukle city</h3>
-                <div class="aSubcaption">Carton ~A3, black pen</div>
-            </div>
-            <div class="cArtworkSample__description">Birthday gift of two drawings for married pair</div>
-            <div class="cArtworkSample__info">
-                Approx cost of same order ~ € 200
-            </div>
-        </div>
-        <!-- ======================================================= Card ༼°▽°༽ -->
-        <div class="cArtworkSample">
-            <div class="cArtworkSample__image">IMG</div>
-            <div class="cArtworkSample__caption">
-                <h3 class="aCaption">Coastal architecture</h3>
-                <div class="aSubcaption">A4 paper, black pen</div>
-            </div>
-            <div class="cArtworkSample__description">Birthday gift</div>
-            <div class="cArtworkSample__info">
-                Approx cost of same order ~ € 200
-            </div>
-        </div>
-        <!-- ======================================================= Card ༼°▽°༽ -->
-        <div class="cArtworkSample">
-            <div class="cArtworkSample__image">IMG</div>
-            <div class="cArtworkSample__caption">
-                <h3 class="aCaption">All the world</h3>
-                <div class="aSubcaption">A4 paper, black pen + aqua colors</div>
-            </div>
-            <div class="cArtworkSample__description">Birthday gift</div>
-            <div class="cArtworkSample__info">
-                Approx cost of same order ~ € 200
-            </div>
-        </div>
-        <!-- ======================================================= Card ༼°▽°༽ -->
-        <div class="cArtworkSample">
-            <div class="cArtworkSample__image">IMG</div>
-            <div class="cArtworkSample__caption">
-                <h3 class="aCaption">Cute rat</h3>
-                <div class="aSubcaption">A4 paper, black pen + aqua colors</div>
-            </div>
-            <div class="cArtworkSample__description">Birthday gift</div>
-            <div class="cArtworkSample__info">
-                Approx cost of same order ~ € 200
-            </div>
-        </div>
-        <!-- ===================================== End Collumn ༼°▽°༽༼°▽°༽༼°▽°༽ -->
-    </div>
-</div>
-</section>
+<div class="tufteDesign__mama">
+<div class="tufteDesign">
+<article>
 
+    <section class="cCardeListCard">
+        <h3 class="h1">All the world</h3>
+        <p class="subtitle">
+            Birthday gift for girl.<br>
+             Pen & aqua colors on paper, 21×30cm
+        </p>
+        <figure>
+                <label 
+                    for="PRODUCT-01" class="margin-toggle">&#8853;</label><input type="checkbox" 
+                    id="PRODUCT-01" class="margin-toggle"/><span class="marginnote">
+                        <span class="cPriceInfo">
+                            <span class="aText">Ориентиры по ценам,<br> на что-то похожее</span>
+                            <span class="aPrice">€50</span>
+                            <span class="aOnstock">Срок до недели</span>
+                            <br><br>
+                            <span class="aText">
+                                Ключевые слова:<br><br>
+                                Австралия, Нью-Йорк, двухэтажный дом в котором овечки занимаются садом. Музыка, танцы, животные.
+                            </span>
+                        </span>
+                        <br>
+                        <img src="data/gallery/artworks/NewYorkSarah30__frame.jpg" alt="" class="zzz"><br>
+                        Framed picture
+                </span>
+            <img src="data/gallery/artworks/NewYorkSarah30__preview.jpg" alt="Two drawings sheets with two riversides." class="zzz">
+        </figure>
+        <p>
+            Земной шар с континетами. Города — Рига, Берлин, Нью-Йорк, Сидней, Иерусалим.
+        </p>
+    </section>
+    <section class="cCardeListCard">
+        <h3 class="h1">Both river sides of Aizkraukle city</h3>
+        <p class="subtitle">
+            Birthday gift with two drawings for married pair.<br>
+            black pen on carton, 13×20cm ×2
+        </p>
+        <figure>
+                <label 
+                    for="PRODUCT-01" class="margin-toggle">&#8853;</label><input type="checkbox" 
+                    id="PRODUCT-01" class="margin-toggle"/><span class="marginnote">
+                        <span class="cPriceInfo">
+                            <span class="aText">Ориентиры по ценам,<br> на что-то похожее</span>
+                            <span class="aPrice">€80</span>
+                            <span class="aOnstock">Срок до двух недель.</span>
+                        </span>
+                </span>
+            <img src="data/gallery/artworks/Aizkraukle55__webpreview.png" alt="Two drawings sheets with two riversides." class="zzz">
+        </figure>
+        <p>
+            Оба берега реки Даугава вблизи города Айзкраукле. Подарок семейной паре на юбилей. Помимо Айзкраукле, показаны города Киев, Рига, Питер и Юрмала.
+        </p>
+        <p>
+            Левая мужская часть — солнце. По ключевым словам рокер, лев, мотоцикл.
+        </p>
+        <p>
+            Правая женская — луна. По ключевым словам луна, дева, лев, уран.
+        </p>
+    </section>
+    <section class="cCardeListCard">
+        <h3 class="h1">Все таксы умеют летать</h3>
+        <p class="subtitle">
+            Birthday gift to architector.<br>
+            Pen & aqua colors on paper, 21×30cm
+        </p>
+        <figure>
+                <label 
+                    for="PRODUCT-01" class="margin-toggle">&#8853;</label><input type="checkbox" 
+                    id="PRODUCT-01" class="margin-toggle"/><span class="marginnote">
+                        <span class="cPriceInfo">
+                            <span class="aText">Ориентиры по ценам,<br> на что-то похожее</span>
+                            <span class="aPrice">€50</span>
+                            <span class="aOnstock">Срок до двух недель.</span>
+                            <br><br>
+                            <span class="aText">
+                                Ключевые слова:<br><br>
+                                Архитектор, 4 детей, дом в Саулкрасты. Спортивные путешествия, Альпы, крепкие напитки, гиперактивен. Кошка и такса, которая летает в руках архитектора.
+                            </span>
+                        </span>
+                </span>
+            <img src="data/gallery/artworks/Saulkrasti45TaksaFly__webpr.png" alt="Artwork with flying dog." class="zzz">
+        </figure>
+        <p>
+            Картина нарисована при поддержке на троих. Вместе с радио- и телеведущим Ромуальдом Ванагасом из Болдераи и опытным походником Алексеем «вороном» Воронцовым из Риги. Килька в левом нижнем углу говорит зрителю, что хорошие дела делаются только в хорошей компании.
+        </p>
+    </section>
+    
+    <section class="cCardeListCard">
+        <h3 class="h1">Портрет директора детского сада</h3>
+        <p class="subtitle">
+            Aqua colors on paper, 21×30cm
+        </p>
+        <figure>
+                <label 
+                    for="PRODUCT-01" class="margin-toggle">&#8853;</label><input type="checkbox" 
+                    id="PRODUCT-01" class="margin-toggle"/><span class="marginnote">
+                        <span class="cPriceInfo">
+                            <span class="aText">Ориентиры по ценам,<br> на что-то похожее</span>
+                            <span class="aPrice">€190</span>
+                            <span class="aOnstock">Срок до трёх недель.</span>
+                            <br><br>
+                            <span class="aText">
+                                Портрет по фотографии в образе крысы. Несколько набросков и этапы комментариев с поправками.
+                            </span>
+                            <br><br>
+                            <img src="data/gallery/artworks/Lindakivi__sketch.jpg" alt="The same pic in process" class="zzz">
+                            Первый набросок
+                        </span>
+                </span>
+            <img src="data/gallery/artworks/Lindakivi__webpreview.jpg" alt="Mouse-mom reading netebook with kids." class="zzz">
+        </figure>
+    </section>
+    <section class="cCardeListCard">
+        <h3 class="h1">Illustrated text</h3>
+        <p class="subtitle">
+            b/w vector image
+        </p>
+        <figure>
+                <label 
+                    for="PRODUCT-01" class="margin-toggle">&#8853;</label><input type="checkbox" 
+                    id="PRODUCT-01" class="margin-toggle"/><span class="marginnote">
+                        <span class="cPriceInfo">
+                            <span class="aText">Ориентиры по ценам,<br> на что-то похожее</span>
+                            <span class="aPrice">€20</span>
+                            <span class="aOnstock">Срок до недели.</span>
+                            <br><br>
+                            <img src="data/gallery/artworks/ItsSAPbaby__cup.jpg" alt="" class="zzz" style="width:50%;"><br>
+                            Результат напечатанный на кружке
+                        </span>
+                </span>
+            <img src="data/gallery/artworks/ItsSAPbaby__webview.png" alt="" class="zzz">
+        </figure>
+        <p>
+            Чёрно-белые иллюстрации к заданной теме или тексту. В цифровом векторном формате для качественной печати.
+        </p>
+    </section>    
+</article>
+</div>
+</div>
+
+</section>
 
 
 
@@ -200,9 +363,9 @@ ga('send', 'pageview');
         <h3 class="cTitleAsTip">Direct contact</h3>
         <div class="cTitleAsBlock">
             <div>
-                Мы не магазин, но рады общаться лично. Если что-то понравилось, напишите письмо! Мы очень любим, когда люди пользуются нашими сувенирами.
+                We are in Riga, Latvia.
             </div>
-            <div class="bTextIsHighlighted">E-mail is the best way to communicate</div>
+            <div class="bTextIsHighlighted">E-mail is the best way to communicate<br><br></div>
             <div class="cTextAsNotice--no">
                 <a href="mailto:sheep.today@gmail.com">sheep.today@gmail.com</a>
             </div>
@@ -210,10 +373,6 @@ ga('send', 'pageview');
     </div>
     <div  class="cContactArea__from">
         <h3 class="cTitleAsTip">Info</h3>
-
-        <div>
-            Сувениры хранятся на складе в Риге, Латвия.
-        </div>
 
         <h4 class="cTitleAsBlock">Sheep.Today News</h4>
         <div class="cTitleAsSub">Newsletter in russian</div>
@@ -227,7 +386,6 @@ ga('send', 'pageview');
             <form action="https://today.us16.list-manage.com/subscribe/post?u=f2f56449d7526a6a993997587&amp;id=122683d921" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
                     <div class="field mc-field-group">
-                          <label class="label" for="mce-EMAIL">Email</label>
                           <div class="control">
                             <input type="email" value="" name="EMAIL" class="input required email" id="mce-EMAIL" placeholder="example@email.address">
                             <div id="mce-responses" class="clear">
@@ -265,17 +423,14 @@ ga('send', 'pageview');
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
 <!-- =================================================== [SUBCONTENT] -->
 
-
-
-
 <!-- =================================================== magic header -->
 
 <aside class="elMagicHeader cMagicHeader">
         <nav class="cMainNav">
-            <a href="../"              class="">Home</a>
-            <a href="../gallery/"      class="">Gallery</a>
-            <a href="../products/"     class="">Products</a>
-            <a href="../#Contacts"     class="">Contacts</a>
+            <a href="./#Home"         class="">Home</a>
+            <a href="gallery/"      class="">Gallery</a>
+            <a href="products/"     class="">Products</a>
+            <a href="./#Contacts"     class="">Contacts</a>
         </nav>
 </aside>
 
@@ -286,7 +441,7 @@ ga('send', 'pageview');
     <div class="elSitePanel__floatTrigger cSitePanel__floatTrigger isOnTop">
         <div class="jsAppTrigger" data-trigga="hasOpenSitePanel">
             <div class="isWhenInactive">
-                <button class="aIcon aIcon--primarysheep"></button>
+                <button class="aIcon aIcon--chambersheep"></button>
             </div>
             <div class="isWhenActive">
                 <button class="aIcon aIcon--close aIcon__contrast"></button>
@@ -296,23 +451,28 @@ ga('send', 'pageview');
     <!-- endblock -->
     <div class="elSitePanel__layout cSitePanel__layout cLayerContrast cSecretChamber">
         <div>
-            Вы нашли секретную комнату!
-            <br><br>
-            You found secret place!
+            <div class="aTitle">Вы нашли секретную комнату</div>
+            <div class="aSubtitle">You found secret place</div>
         </div>
-        <figure class="image">
-            <img src="../app/img/LuiSheep.svg" alt="sheep"/>
+
+        <div class="cSecretChamber__itemArea">
+            
+            <a href="sitemap.html" class="cSecretChamber__item">
+                <span class="aIcon aIcon--sitemap"></span>
+                <span class="aLink">Картра сайта<br>Site map</span>
+            </a>
+        </div>
+        <figure class="cSecretChamber__image">
+            <img src="app/img/navigation_map.svg" alt="sheep"/>
         </figure>
     </div>
 </aside>
-
-
 
 <!-- =================================================== ʕ⊙ᴥ⊙ʔ  -->
 <!-- =================================================== [GROUND] -->
 
 <!-- app libs --><script
-     src="../app/app4k/app_bundle.js"
+     src="app/app4k/app_bundle.js"
      ></script><!-- / -->
 
 <!-- =================================================== [Third Tools] -->
