@@ -300,7 +300,9 @@ $(function(){
     }
 
     // magic header on scroll down
-    var scrollOffsetForMagicHeader = $('.cLanding').offset().height;
+    var scrollOffsetForMagicHeader = $('.cSiteHeader');
+    if ( !scrollOffsetForMagicHeader ) scrollOffsetForMagicHeader = 100;
+    else scrollOffsetForMagicHeader = scrollOffsetForMagicHeader.offset().height;
     var qBody = $('.elBody');
     var qSitePanelTrigger = $('.cSitePanel__floatTrigger');
     $(window).scroll(function () {

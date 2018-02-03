@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<base href="../">
 <!-- frontent settings 12з.4001 app4K ## InnerI -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -57,13 +58,44 @@ ga('send', 'pageview');
 </style>
 
 <!-- bundle --><link
-     href="../app/app4k/app_bundle.css"
+     href="app/app4k/app_bundle.css"
      rel="stylesheet"  media="all" /><!-- / -->
 
 <!-- ## custom settings below-->
 
 <style>
-
+.cGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.cGallery>* {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.cGallery img {
+    max-width: 90%;
+    max-height: 12rem;
+}
+.group-by-4>* {
+    width: 25%;
+}
+    
+    .cLanding--gazania .cPriceInfo {
+        font-family: 'Open Sans', sans-serif;
+        padding-top: 1rem;
+    }
+    .cLanding--gazania .cPriceInfo .aPrice {
+        font-size: 1.2em;
+    }
 </style>
 
 
@@ -78,17 +110,17 @@ ga('send', 'pageview');
 <!-- =================================================== [landing screen] -->
 
 
-<section id="Home" class="cLanding cLandingDefault">
+<section id="Home" class="cLanding cLandingDefault cLanding--gazania">
     <header class="cSiteHeader cLanding__header bPrimarysheep">
         <h2 class="aTitle">www.sheep.today</h2>
         <nav class="cSiteHeader__menu">
 
             <!-- -------------------------------------------------- main nav -->
             <div class="cMainNav">
-                <a href="../"            class="">Home</a>
-                <a href="../gallery/"    class="">Gallery</a>
-                <a href="../products/"   class="">Products</a>
-                <a href="../#Contacts"   class="">Contacts</a>
+                <a href="./#Home"            class="">Home</a>
+                <a href="gallery/"    class="">Gallery</a>
+                <a href="products/"   class="">Products</a>
+                <a href="./#Contacts"   class="">Contacts</a>
             </div>
             <!-- endblock -->
 
@@ -101,13 +133,19 @@ ga('send', 'pageview');
         <div class="cLanding__content">
             <div class="aCard">
                 <h1>Latvia — non geographical atlas</h1>
-                <h2 class="subtitle">Printed book</h2>
                 <p>100% людей (около 400) после знакомства с книгой восклицали «Ух ты! Это круто!»</p>
+                <p>
+                    Набор из 13 открыток соединённых в книжку.
+                </p>
+                <div class="cPriceInfo">
+                    <div class="aPrice">€24</div>
+                    <div class="aOnstock">Available: 21</div>
+                </div>
             </div>
         </div>
         <div class="cLanding__image">
             <figure class="image">
-                <img src="../data/products/atlas-lv/book.jpg" alt="Book view">
+                <img src="data/products/atlas-lv/book.jpg" alt="Book view">
             </figure>
         </div>
 
@@ -122,87 +160,61 @@ ga('send', 'pageview');
 
 <section class="elLayer">
 <header id="Contacts" class="cStageHeader">
-    <h2 class="aCaption">Что за книга? <span class="aSymbol">/</span> About</h2>
+    <h2 class="aCaption">Картинки из книги <span class="aSymbol">/</span> All images</h2>
 </header>
 
-    <div class="columns">
+
+    <div class="cGallery group-by-4">
+        <div class="column">
+            <img class="zzz" src="data/products/productIcon__zlbookGazania.jpg">
+        </div>
+        <div class="column">
+            <img class="zzz" src="data/products/atlas-lv/01.png">
+        </div>
+        <div class="column">
+            <img class="zzz" src="data/products/atlas-lv/02.png">
+        </div>
 
         <div class="column">
-            <dl>
-                <dt>Average price</dt>
-                <dd>€ 18.50</dd>
-                <dt>Available</dt>
-                <dd>>20</dd>
-                <dt>Contacts</dt>
-                <dd><a href="mailto:sheep.today@gmail.com">sheep.today@gmail.com</a></dd>
-            </dl>
+            <img class="zzz" src="data/products/atlas-lv/03.png">
+        </div>
+        <div class="column">
+            <img class="zzz" src="data/products/atlas-lv/04.png">
+        </div>
 
-            <h3>Share this book</h3>
-            <div class="social-likes">
-                <div data-service="facebook" title="Share link on Facebook">Facebook</div>
-                <div data-service="twitter" title="Share link on Twitter">Twitter</div>
-                <div data-service="pinterest" title="Share link on Pinterest" data-media="image link, required">Pinterest</div>
-                <div data-service="vkontakte" title="Share link on Vkontakte">Vkontakte</div>
-            </div>
+        <div class="column">
+            <img class="zzz" src="data/products/atlas-lv/05.png">
         </div>
-    </div>
+        <div class="column">
+            <img class="zzz" src="data/products/atlas-lv/06.png">
+        </div>
 
-    <h2 class="title">All images</h2>
+        <div class="column">
+            <img class="zzz" src="data/products/atlas-lv/07.png">
+        </div>
+        <div class="column">
+            <img class="zzz" src="data/products/atlas-lv/08.png">
+        </div>
 
-    <div class="columns">
         <div class="column">
-            <img src="../data/products/atlas-lv/01.png">
+            <img class="zzz" src="data/products/atlas-lv/09.png">
         </div>
         <div class="column">
-            <img src="../data/products/atlas-lv/02.png">
+            <img class="zzz" src="data/products/atlas-lv/10.png">
         </div>
-    </div>
-    <div class="columns">
+
         <div class="column">
-            <img src="../data/products/atlas-lv/03.png">
-        </div>
-        <div class="column">
-            <img src="../data/products/atlas-lv/04.png">
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column">
-            <img src="../data/products/atlas-lv/05.png">
+            <img class="zzz" src="data/products/atlas-lv/11.png">
         </div>
         <div class="column">
-            <img src="../data/products/atlas-lv/06.png">
+            <img class="zzz" src="data/products/atlas-lv/12.png">
         </div>
-    </div>
-    <div class="columns">
+
         <div class="column">
-            <img src="../data/products/atlas-lv/07.png">
-        </div>
-        <div class="column">
-            <img src="../data/products/atlas-lv/08.png">
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column">
-            <img src="../data/products/atlas-lv/09.png">
+            <img class="zzz" src="data/products/atlas-lv/13.png">
         </div>
         <div class="column">
-            <img src="../data/products/atlas-lv/10.png">
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column">
-            <img src="../data/products/atlas-lv/11.png">
-        </div>
-        <div class="column">
-            <img src="../data/products/atlas-lv/12.png">
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column">
-            <img src="../data/products/atlas-lv/13.png">
-        </div>
-        <div class="column">
-            <img src="../data/products/atlas-lv/00.png">
+            <img class="zzz" src="data/products/atlas-lv/00.png">
         </div>
     </div>
 
@@ -221,55 +233,15 @@ ga('send', 'pageview');
 <div class="elSection cContactArea textDesign textLayout">
     <div class="cContactArea__to">
         <h3 class="cTitleAsTip">Direct contact</h3>
-        <div class="cTitleAsBlock">
-            <div>
+            <p>
                 Мы не магазин, но рады общаться лично. Если что-то понравилось, напишите письмо! Мы очень любим, когда люди пользуются нашими сувенирами.
-            </div>
-            <div class="bTextIsHighlighted">E-mail is the best way to communicate</div>
+            </p>
+        <div class="cTitleAsBlock">
+            <p class="bTextIsHighlighted">E-mail is the best way to communicate</p>
             <div class="cTextAsNotice--no">
                 <a href="mailto:sheep.today@gmail.com">sheep.today@gmail.com</a>
             </div>
         </div>
-    </div>
-    <div  class="cContactArea__from">
-        <h3 class="cTitleAsTip">Info</h3>
-
-        <div>
-            Сувениры хранятся на складе в Риге, Латвия.
-        </div>
-
-        <h4 class="cTitleAsBlock">Sheep.Today News</h4>
-        <div class="cTitleAsSub">Newsletter in russian</div>
-        
-
-        <!-- Begin MailChimp Signup Form -->
-        <div class="elForm cForm" id="mc_embed_signup">
-            <div class="cTextAsNotice">
-                <p>Когда у нас появляются новые сувениры, мы отправляем письмо. Подпишитесь на рассылку, если хотите следить за обновлениями.</p>
-            </div>
-            <form action="https://today.us16.list-manage.com/subscribe/post?u=f2f56449d7526a6a993997587&amp;id=122683d921" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-                    <div class="field mc-field-group">
-                          <label class="label" for="mce-EMAIL">Email</label>
-                          <div class="control">
-                            <input type="email" value="" name="EMAIL" class="input required email" id="mce-EMAIL" placeholder="example@email.address">
-                            <div id="mce-responses" class="clear">
-                                    <div class="help response" id="mce-error-response" style="display:none"></div>
-                                    <div class="help response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="field" style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f2f56449d7526a6a993997587_122683d921" tabindex="-1" value=""></div>
-                    <div class="field">
-                        <div class="control">
-                            <input type="submit" value="Подписаться на рассылку" name="subscribe" id="mc-embedded-subscribe" class="button">
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <!--End mc_embed_signup-->
-
     </div>
 </div>
 </section>
@@ -295,10 +267,10 @@ ga('send', 'pageview');
 
 <aside class="elMagicHeader cMagicHeader">
         <nav class="cMainNav">
-            <a href="../"              class="">Home</a>
-            <a href="../gallery/"      class="">Gallery</a>
-            <a href="../products/"     class="">Products</a>
-            <a href="../#Contacts"     class="">Contacts</a>
+                <a href="./#Home"            class="">Home</a>
+                <a href="gallery/"    class="">Gallery</a>
+                <a href="products/"   class="">Products</a>
+                <a href="./#Contacts"   class="">Contacts</a>
         </nav>
 </aside>
 
@@ -309,7 +281,7 @@ ga('send', 'pageview');
     <div class="elSitePanel__floatTrigger cSitePanel__floatTrigger isOnTop">
         <div class="jsAppTrigger" data-trigga="hasOpenSitePanel">
             <div class="isWhenInactive">
-                <button class="aIcon aIcon--primarysheep"></button>
+                <button class="aIcon aIcon--chambersheep"></button>
             </div>
             <div class="isWhenActive">
                 <button class="aIcon aIcon--close aIcon__contrast"></button>
@@ -319,15 +291,20 @@ ga('send', 'pageview');
     <!-- endblock -->
     <div class="elSitePanel__layout cSitePanel__layout cLayerContrast cSecretChamber">
         <div>
-            Вы нашли секретную комнату!
-            <br><br>
-            You found secret place!
+            <div class="aTitle">Вы нашли секретную комнату</div>
+            <div class="aSubtitle">You found secret place</div>
         </div>
-        <figure class="image">
-            <img src="../app/img/LuiSheep.svg" alt="sheep"/>
+        <figure class="cSecretChamber__image">
+            <img src="app/img/navigation_map.svg" alt="sheep"/>
         </figure>
+        <div class="cSecretChamber__itemArea">
+            <a href="sitemap.html" class="cSecretChamber__item">
+                <span class="aLink">Картра сайта<br>Site map</span>
+            </a>
+        </div>
     </div>
 </aside>
+
 
 
 
@@ -335,12 +312,11 @@ ga('send', 'pageview');
 <!-- =================================================== [GROUND] -->
 
 <!-- app libs --><script
-     src="../app/app4k/app_bundle.js"
+     src="app/app4k/app_bundle.js"
      ></script><!-- / -->
 
 <!-- =================================================== [Third Tools] -->
 
-<!-- mailchimp --><script type='text/javascript'src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>$(function($) {window.fnames = new Array(); window.ftypes = new Array(); fnames[0]='EMAIL'; ftypes[0]='email'; fnames[1]='FNAME'; ftypes[1]='text'; fnames[2]='LNAME'; ftypes[2]='text'; fnames[3]='BIRTHDAY'; ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script><!-- / -->
 
 </body>
 </html>

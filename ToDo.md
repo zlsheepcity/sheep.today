@@ -23,6 +23,10 @@ OCT 2017
 
 https://t.me/addstickers/SheepTodayOffice
 
+not prod
+
+- Интересные факты About the artist
+
 
 -------------------------------------------------------------
 # Задачи ВНЕ

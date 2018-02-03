@@ -288,10 +288,10 @@ ga('send', 'pageview');
 
 <aside class="elMagicHeader cMagicHeader">
         <nav class="cMainNav">
-            <a href=""              class="">Home</a>
-            <a href="gallery/"      class="">Gallery</a>
-            <a href="products/"     class="">Products</a>
-            <a href="#Contacts"     class="">Contacts</a>
+                <a href="./#Home" class="">Home</a>
+                <a href="gallery/" class="">Gallery</a>
+                <a href="products/" class="">Products</a>
+                <a href="./#Contacts" class="">Contacts</a>
         </nav>
 </aside>
 
@@ -302,7 +302,7 @@ ga('send', 'pageview');
     <div class="elSitePanel__floatTrigger cSitePanel__floatTrigger isOnTop">
         <div class="jsAppTrigger" data-trigga="hasOpenSitePanel">
             <div class="isWhenInactive">
-                <button class="aIcon aIcon--primarysheep"></button>
+                <button class="aIcon aIcon--chambersheep"></button>
             </div>
             <div class="isWhenActive">
                 <button class="aIcon aIcon--close aIcon__contrast"></button>
@@ -312,13 +312,17 @@ ga('send', 'pageview');
     <!-- endblock -->
     <div class="elSitePanel__layout cSitePanel__layout cLayerContrast cSecretChamber">
         <div>
-            Вы нашли секретную комнату!
-            <br><br>
-            You found secret place!
+            <div class="aTitle">Вы нашли секретную комнату</div>
+            <div class="aSubtitle">You found secret place</div>
         </div>
-        <figure class="image">
-            <img src="app/img/LuiSheep.svg" alt="sheep"/>
+        <figure class="cSecretChamber__image">
+            <img src="app/img/navigation_map.svg" alt="sheep"/>
         </figure>
+        <div class="cSecretChamber__itemArea">
+            <a href="sitemap.html" class="cSecretChamber__item">
+                <span class="aLink">Картра сайта<br>Site map</span>
+            </a>
+        </div>
     </div>
 </aside>
 
@@ -333,7 +337,6 @@ ga('send', 'pageview');
 
 <!-- =================================================== [Third Tools] -->
 
-<!-- mailchimp --><script type='text/javascript'src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>$(function($) {window.fnames = new Array(); window.ftypes = new Array(); fnames[0]='EMAIL'; ftypes[0]='email'; fnames[1]='FNAME'; ftypes[1]='text'; fnames[2]='LNAME'; ftypes[2]='text'; fnames[3]='BIRTHDAY'; ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script><!-- / -->
 
 </body>
 </html>

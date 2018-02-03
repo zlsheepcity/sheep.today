@@ -1,5 +1,5 @@
 /* app4K css base
-v2018.1.27 sheep.today
+v2018.2.3 sheep.today
 */
 charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700&subset=cyrillic');
@@ -10,7 +10,6 @@ charset "UTF-8";
 */
 
 html {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -20,6 +19,9 @@ body {
 }
 *, *::before, *::after {
     box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
 }
 
 /* appTheme */
@@ -78,12 +80,6 @@ body {
 }
 .zzzZoomableOverlay {
     z-index:20!important;
-}
-.zzzZoomableOverlay {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
-    background-position: right top;
-    background-size: 8vw 8vw;
-    background-repeat: no-repeat;
 }
 .zzzZoomed {
     z-index:21!important;

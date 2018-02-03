@@ -1,10 +1,8 @@
 /* app4K css components
-v2018.1.27 sheep.today
+v2018.2.3 sheep.today
 */
 
-/*
---------------------------------------------------- 
-*/
+/* --------------------------------------------------- */
 
 .cTitleAsSub {
     margin-top: 0;
@@ -21,6 +19,7 @@ v2018.1.27 sheep.today
     font-weight: normal;
     font-size: 1rem;
     opacity: .5;
+    font-family: 'Open Sans', sans-serif;
 }
 * + .cTitleAsTip {
     margin-top: 1rem;
@@ -46,7 +45,7 @@ v2018.1.27 sheep.today
     margin-bottom: 1rem;
 }
 .bTextIsHighlighted {
-    color: #FC9D9A;
+    color: hsl(2, 63%, 68%);
 }
 
 .button {
@@ -55,9 +54,7 @@ v2018.1.27 sheep.today
 }
 
 
-/*
---------------------------------------------------- text design
-*/
+/* --------------------------------------------------- text design */
 
 /*
 .textDesign p {
@@ -113,9 +110,7 @@ v2018.1.27 sheep.today
 }
 
 
-/*
---------------------------------------------------- 
-*/
+/* --------------------------------------------------- */
 
 .cDcFloatButton .aIcon {
     font-size: 4rem;
@@ -126,9 +121,7 @@ v2018.1.27 sheep.today
     }
 }
 
-/*
---------------------------------------------------- 
-*/
+/* --------------------------------------------------- */
 
 .cLayerContrast {
     background-color: #033649;
@@ -147,14 +140,21 @@ v2018.1.27 sheep.today
 .cLayerContrast .cStageHeader::after {
     background-color: rgba(205, 179, 128, 0.25);
 }
+.cLayerContrast .cTitleAsTip {
+    opacity: 1;
+    color: #E8DDCB;
+}
+.cLayerContrast a:link {
+    text-shadow: none;
+    background: none;
+    text-decoration: underline;
+}
 
 .cLayerContrast--opposition {
     background-color: #031634;
 }
 
-/*
---------------------------------------------------- 
-*/
+/* --------------------------------------------------- */
 
 .cMainNav {
     display: flex;
@@ -176,32 +176,41 @@ v2018.1.27 sheep.today
 .cMainNav a.is-active {
     text-decoration: none;
 }
-
+.cMagicHeader .cMainNav {
+    margin-left: -1rem;
+}
 /*
---------------------------------------------------- 
+
+.cMagicHeader .cMainNav > a {
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.cMagicHeader .cMainNav > a:hover {
+    background-color: rgba(0,0,0,0.05);
+}
 */
+/* --------------------------------------------------- */
 
 .cSecretChamber {
     padding: 4px 12px;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     align-content: center;
     font-size:2rem;
     text-align:center;
     font-style:italic;
 }
-.cSecretChamber:before {
-    content: '';
-    display: block;
-    height: 9rem;
-}
 .cSecretChamber__item {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-content: center;
     align-items: center;
     background-color: rgba(255,255,255,.25);
@@ -214,7 +223,7 @@ v2018.1.27 sheep.today
 }
 .cSecretChamber__item .aLink {
     padding-top: .5rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 .cSecretChamber__item:hover {
     transform: translateX(-0.1rem) translateY(-0.1rem);
@@ -223,14 +232,15 @@ v2018.1.27 sheep.today
 .cSecretChamber__image {
     padding: 2rem;
 }
+.cSecretChamber__image img {
+    max-height: 25vh;
+}
 .cSecretChamber .aTitle {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1;
 }
 
-/*
-Stage header
-*/
+/* Stage header */
 
 .cStageHeader {
     display: flex;
@@ -275,9 +285,7 @@ Stage header
     }
 }
 
-/*
----------------------------------------------------
-*/
+/* --------------------------------------------------- */
 
 .cSiteHeader {
     display: block;
@@ -307,10 +315,15 @@ Stage header
     font-size: 3rem;
     line-height: 1;
 }
+.cSiteHeader__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
 
-/*
-Landing intro section
-*/
+/* Landing intro section */
 
 .cLanding__view {
     padding-top: 0;
@@ -378,9 +391,7 @@ Landing intro section
     }
 }
 
-/*
-Default landing
-*/
+/* Default landing */
 
 .cLandingDefault {
     background-color: #E8DDCB;
@@ -390,9 +401,7 @@ Default landing
 }
 
 
-/*
-Card design cCardeQuat
-*/
+/* Card design cCardeQuat */
 
 .cCardeQuatBox {
     display: flex;
@@ -529,9 +538,7 @@ Card design cCardeQuat
     }
 }
 
-/*
-Saturs block
-*/
+/* Saturs block */
 
 .cSaturs {
     display: flex;
@@ -580,11 +587,21 @@ Saturs block
         padding-top: 0;
     }
 }
+@media all and (max-width:600px) {
+    .cSaturs {
+        flex-direction: column;
+    }
+    .cSaturs > .cBlog__images {
+        width: 100%;
+    }
+    .cSaturs > .cBlog__topics {
+        width: 100%;
+        padding-top: 4rem;
+    }
+}
 
 
-/*
-Blog style data
-*/
+/* Blog style data */
 
 .cBlog {
     padding-left: 2rem;
@@ -655,9 +672,7 @@ Blog style data
 }
 
 
-/*
-Contacts
-*/
+/* Contacts */
 
 .cContactArea {
     display: flex;
@@ -772,3 +787,53 @@ Contacts
 }
 
 /**/
+
+.cCardeListCard:after {
+    content: 'ʕ⊙ᴥ⊙ʔ';
+    display: block;
+    width: 55%;
+    text-align: center;
+    padding: 2.1rem 0;
+    font-size: 2.1rem;
+    opacity: 0.5;
+}
+.cCardeListCard .promoimage {
+    margin-bottom: 0;
+}
+.cCardeListCard .promoimage + .h2 {
+    margin-top: 1.2rem;
+}
+
+/**/
+
+.cPriceInfo {
+    display: block;
+}
+.cPriceInfo .aText {
+    font-size: 1.2em;
+}
+.cPriceInfo .aPrice {
+    font-size: 2em;
+    color: darkgreen;
+    display: block;
+}
+
+/**/
+
+.textDesign .textlink,
+.textDesign .textlink:link,
+.textDesign .textlink:visited,
+.textlink {
+    background: none;
+    text-decoration: none;
+    text-shadow: none;
+    color: hsl(0, 21%, 35%);
+    display: inline-block;
+    vertical-align: baseline;
+    
+    border-bottom: 2px solid rgba(134, 60, 60, 0.05);
+}
+.textDesign .textlink:hover,
+.textlink:hover {
+    border-bottom-color: rgba(134, 60, 60, 0.25);
+}
