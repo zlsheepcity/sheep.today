@@ -1,0 +1,58 @@
+body {
+	background:#FFF;
+	text-align:center;
+	padding:12px;
+	font-family: 'microsoft sans serif', 'lucida sans', arial, sans-serif;
+}
+
+#quiz {
+	width:824px;
+	margin:0 auto;
+	text-align:left;
+}
+
+
+#cover {
+	border:#666 12px solid;
+	background: url('cover.gif') 0 0 no-repeat #FF9900;
+}
+
+#quiz h1 {
+	height:160px;
+	margin:12px 0 0 24px;
+	color:#FFF;
+	font-weight:normal;
+	font-size:37px;
+	font-family: 'arial narrow', 'microsoft sans serif', 'lucida sans', arial, sans-serif;
+}
+
+#quiz h1  small {
+	color:#000;
+	font-size:15px;
+}
+
+#form {
+	width:600px;
+}
+
+#form form {
+	margin:0;padding:0;
+}
+
+#form  fieldset{
+	border:0;
+	padding:0 0 2em 12px;
+	margin:0;
+}
+
+#form p {
+	margin:0 0 1em 0;padding:0;
+}
+
+#form  ul {
+	list-style:none;
+	margin:0 0 .5em 12px;
+	padding-left:0;
+}
+
+.red {color:#F00;}
