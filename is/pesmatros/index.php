@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Пройти тест: Какой вы Пёс-Матрос?</title>
+	<title>Пройти тест. Какой вы Пёс-Матрос?</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>	
@@ -17,25 +17,29 @@
     <meta name="msapplication-TileColor" content="#FFCC01">
     <meta name="msapplication-TileImage" content="../../app/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#FFCC01">
+    
+    <!-- SOCIAL -->
 
-    <!-- // hey, google! -->
+    <meta property="og:title" content="Пройти тест. Какой вы Пёс-Матрос?" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="http://sheep.today/is/pesmatros/" />
+    <meta property="og:image" content="http://sheep.today/is/pesmatros/bandos.png" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+    <meta property="og:locale" content="ru_RU" />
 
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-87015828-1', 'auto');
-    ga('send', 'pageview');
-    </script>
-
-	<style type="text/css">
-		@import "main.css";
-	</style> 
+    <link href="main.css" rel="stylesheet" media="all">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-likes/dist/social-likes_birman.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/social-likes/dist/social-likes.min.js"></script>
+    
+    
 </head>
 <body>
 <div id="quiz">
-<?
+<?php
 
 $homeURL = 'http://sheep.today/is/pesmatros/';
 	
@@ -121,17 +125,11 @@ $homeURL = 'http://sheep.today/is/pesmatros/';
 			"33" => "molokosos.gif",
 		);	
 
-		$html = '<table width="600" bgcolor="#992222" color="#000000" border="0" cellpadding="4" cellspacing="10"><tr><td bgcolor="#FFEEEE"><b>Вы — Пёс-Матрос '.$titles[$answer].'</b></td><td bgcolor="#000000" rowspan="2"><img src="'.$homeURL.$images[$answer].'" alt="'.$titles[$answer].'"/></td></tr><tr><td bgcolor="#FFEEEE" valign="top"><small>'.$descriptions[$answer].'</small></td></tr></table><small>Пройти тест <a href="'.$homeURL.'">«Какой вы Пёс-Матрос?»</a></small>
+		$html = '<table width="600" bgcolor="#992222" color="#000000" border="0" cellpadding="4" cellspacing="10"><tr><td bgcolor="#FFEEEE"><b>Вы — Пёс-Матрос '.$titles[$answer].'</b></td><td bgcolor="#000000" rowspan="2"><img src="'.$homeURL.$images[$answer].'" alt="'.$titles[$answer].'"/></td></tr><tr><td bgcolor="#FFEEEE" valign="top"><small>'.$descriptions[$answer].'</small></td></tr></table><div style="font-size:1.4em;">Пройти тест <a href="'.$homeURL.'">«Какой вы Пёс-Матрос?»</a></div>
 		';
 		
 		print $html;
-		
-		?>
-		<br/><br/><hr style="width:600px;text-align:left;"/>
-		<small>Скопируйте к себе в блог:</small><br/>
-		<textarea style="width:600px;height:220px;font-size:11px;"><?= $html;?></textarea>
-		<?
-		
+
 	
 	}
 	else include "quiz.php";
@@ -140,6 +138,14 @@ $homeURL = 'http://sheep.today/is/pesmatros/';
 </div>
 <br/>
 
+<blockquote>
+            <div class="social-likes">
+                <div data-service="facebook" title="Share link on Facebook">Facebook</div>
+                <div data-service="twitter" title="Share link on Twitter">Twitter</div>
+                <div data-service="pinterest" title="Share link on Pinterest" data-media="image link, required">Pinterest</div>
+                <div data-service="vkontakte" title="Share link on Vkontakte">Vkontakte</div>
+            </div>
+</blockquote>
 
 
 </body>
